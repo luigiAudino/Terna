@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WorkTableViewCell: UITableViewCell {
+class JobTableViewCell: UITableViewCell {
 
     @IBOutlet weak var emojiLbl: UILabel!
     @IBOutlet weak var titleLbl: UILabel!

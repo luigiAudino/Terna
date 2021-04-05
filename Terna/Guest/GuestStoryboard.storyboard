@@ -43,6 +43,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iQX-OW-CiH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qsd-3i-Rue">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -58,7 +59,7 @@
         <!--Item-->
         <scene sceneID="meq-SA-EDF">
             <objects>
-                <viewController id="4x6-tn-E5z" customClass="WorkViewController" customModule="Terna" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4x6-tn-E5z" customClass="JobViewController" customModule="Terna" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9xE-j8-dxR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

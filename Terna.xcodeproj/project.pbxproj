@@ -18,9 +18,13 @@
 		A6705B2C261A864D00DFE6DC /* GuestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6705B2B261A864D00DFE6DC /* GuestStoryboard.storyboard */; };
 		A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B2E261A86A100DFE6DC /* AboutUsViewController.swift */; };
 		A6705B33261A86F000DFE6DC /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6705B32261A86F000DFE6DC /* UserStoryboard.storyboard */; };
-		A6705B3E261A898B00DFE6DC /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B3D261A898B00DFE6DC /* WorkViewController.swift */; };
-		A6705B43261A8AC000DFE6DC /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B41261A8AC000DFE6DC /* WorkTableViewCell.swift */; };
-		A6705B44261A8AC000DFE6DC /* WorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6705B42261A8AC000DFE6DC /* WorkTableViewCell.xib */; };
+		A6705B3E261A898B00DFE6DC /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B3D261A898B00DFE6DC /* JobViewController.swift */; };
+		A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B41261A8AC000DFE6DC /* JobTableViewCell.swift */; };
+		A6705B44261A8AC000DFE6DC /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6705B42261A8AC000DFE6DC /* JobTableViewCell.xib */; };
+		A68BA16F261A93EE00ACC4C7 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68BA16E261A93EE00ACC4C7 /* Job.swift */; };
+		A68BA17B261A971D00ACC4C7 /* job.json in Resources */ = {isa = PBXBuildFile; fileRef = A68BA17A261A971D00ACC4C7 /* job.json */; };
+		A6BF1262261A9C49006F0AB3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1261261A9C49006F0AB3 /* Result.swift */; };
+		A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1264261A9CB3006F0AB3 /* JobResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +42,13 @@
 		A6705B2B261A864D00DFE6DC /* GuestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuestStoryboard.storyboard; sourceTree = "<group>"; };
 		A6705B2E261A86A100DFE6DC /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		A6705B32261A86F000DFE6DC /* UserStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
-		A6705B3D261A898B00DFE6DC /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
-		A6705B41261A8AC000DFE6DC /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
-		A6705B42261A8AC000DFE6DC /* WorkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkTableViewCell.xib; sourceTree = "<group>"; };
+		A6705B3D261A898B00DFE6DC /* JobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
+		A6705B41261A8AC000DFE6DC /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		A6705B42261A8AC000DFE6DC /* JobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		A68BA16E261A93EE00ACC4C7 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		A68BA17A261A971D00ACC4C7 /* job.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = job.json; sourceTree = "<group>"; };
+		A6BF1261261A9C49006F0AB3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A6BF1264261A9CB3006F0AB3 /* JobResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResult.swift; sourceTree = "<group>"; };
 		CB9F85CD92CEC21E357E130C /* Pods-Terna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.debug.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +102,8 @@
 		A607D899261A631D00FCFE50 /* Terna */ = {
 			isa = PBXGroup;
 			children = (
+				A68BA179261A960400ACC4C7 /* Mock */,
+				A68BA16D261A93E500ACC4C7 /* Model */,
 				A6705B31261A86E400DFE6DC /* User */,
 				A6705B2A261A863000DFE6DC /* Guest */,
 				A607D89A261A631D00FCFE50 /* AppDelegate.swift */,
@@ -129,11 +139,29 @@
 		A6705B40261A8AA500DFE6DC /* WorkWithUs */ = {
 			isa = PBXGroup;
 			children = (
-				A6705B3D261A898B00DFE6DC /* WorkViewController.swift */,
-				A6705B41261A8AC000DFE6DC /* WorkTableViewCell.swift */,
-				A6705B42261A8AC000DFE6DC /* WorkTableViewCell.xib */,
+				A6705B3D261A898B00DFE6DC /* JobViewController.swift */,
+				A6705B41261A8AC000DFE6DC /* JobTableViewCell.swift */,
+				A6705B42261A8AC000DFE6DC /* JobTableViewCell.xib */,
 			);
 			path = WorkWithUs;
+			sourceTree = "<group>";
+		};
+		A68BA16D261A93E500ACC4C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A68BA16E261A93EE00ACC4C7 /* Job.swift */,
+				A6BF1261261A9C49006F0AB3 /* Result.swift */,
+				A6BF1264261A9CB3006F0AB3 /* JobResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A68BA179261A960400ACC4C7 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				A68BA17A261A971D00ACC4C7 /* job.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,12 +223,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6705B44261A8AC000DFE6DC /* WorkTableViewCell.xib in Resources */,
+				A6705B44261A8AC000DFE6DC /* JobTableViewCell.xib in Resources */,
 				A607D8A7261A631E00FCFE50 /* LaunchScreen.storyboard in Resources */,
 				A607D8A4261A631E00FCFE50 /* Assets.xcassets in Resources */,
 				A6705B2C261A864D00DFE6DC /* GuestStoryboard.storyboard in Resources */,
 				A6705B33261A86F000DFE6DC /* UserStoryboard.storyboard in Resources */,
 				A607D8A2261A631D00FCFE50 /* Main.storyboard in Resources */,
+				A68BA17B261A971D00ACC4C7 /* job.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,11 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BF1262261A9C49006F0AB3 /* Result.swift in Sources */,
+				A68BA16F261A93EE00ACC4C7 /* Job.swift in Sources */,
 				A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */,
-				A6705B43261A8AC000DFE6DC /* WorkTableViewCell.swift in Sources */,
+				A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */,
+				A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */,
 				A6705B1F261A695A00DFE6DC /* LoginViewController.swift in Sources */,
 				A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */,
-				A6705B3E261A898B00DFE6DC /* WorkViewController.swift in Sources */,
+				A6705B3E261A898B00DFE6DC /* JobViewController.swift in Sources */,
 				A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */,
 				A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */,
 			);
