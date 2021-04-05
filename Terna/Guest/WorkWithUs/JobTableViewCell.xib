@@ -28,14 +28,19 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxS-FB-gCa">
                         <rect key="frame" x="15" y="15" width="320" height="165"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJx-Ku-HLH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJx-Ku-HLH">
                                 <rect key="frame" x="15" y="15" width="40" height="20.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="1vW-zP-0jI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S21-MU-ceT">
                                 <rect key="frame" x="70" y="15" width="40.5" height="20.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,7 +59,7 @@
                             <constraint firstItem="jJx-Ku-HLH" firstAttribute="top" secondItem="hxS-FB-gCa" secondAttribute="top" constant="15" id="OKB-nf-BMj"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mxZ-8Y-RiY" secondAttribute="bottom" constant="15" id="SXb-PK-Yj7"/>
                             <constraint firstItem="mxZ-8Y-RiY" firstAttribute="leading" secondItem="hxS-FB-gCa" secondAttribute="leading" constant="15" id="UmJ-ff-0S6"/>
-                            <constraint firstItem="mxZ-8Y-RiY" firstAttribute="top" secondItem="jJx-Ku-HLH" secondAttribute="bottom" constant="15" id="fpw-1n-nxg"/>
+                            <constraint firstItem="mxZ-8Y-RiY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jJx-Ku-HLH" secondAttribute="bottom" constant="15" id="fpw-1n-nxg"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S21-MU-ceT" secondAttribute="trailing" constant="15" id="lvW-B1-r65"/>
                             <constraint firstItem="jJx-Ku-HLH" firstAttribute="leading" secondItem="hxS-FB-gCa" secondAttribute="leading" constant="15" id="nRn-NR-zL3"/>
                             <constraint firstItem="mxZ-8Y-RiY" firstAttribute="top" secondItem="S21-MU-ceT" secondAttribute="bottom" constant="15" id="p8M-iJ-uZQ"/>
