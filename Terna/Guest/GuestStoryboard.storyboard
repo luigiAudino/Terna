@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Chi siamo-->
         <scene sceneID="4ZF-uU-F6J">
             <objects>
                 <viewController id="fpJ-zX-BRV" customClass="AboutUsViewController" customModule="Terna" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <constraint firstItem="1xR-Pc-baz" firstAttribute="centerY" secondItem="wmr-CS-Pa2" secondAttribute="centerY" id="nnR-uU-RlA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Ac7-h1-pKy"/>
+                    <tabBarItem key="tabBarItem" title="Chi siamo" image="about_us" id="Ac7-h1-pKy"/>
                     <navigationItem key="navigationItem" id="Dh4-nl-5Ia"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZT-Or-XlS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -56,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="720" y="282"/>
         </scene>
-        <!--Item-->
+        <!--Lavora con noi-->
         <scene sceneID="meq-SA-EDF">
             <objects>
                 <viewController id="4x6-tn-E5z" customClass="JobViewController" customModule="Terna" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +78,7 @@
                             <constraint firstItem="QJp-Ph-Dkh" firstAttribute="leading" secondItem="4mB-Ed-A12" secondAttribute="leading" id="kkv-oM-Be2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ESb-jK-CFy"/>
+                    <tabBarItem key="tabBarItem" title="Lavora con noi" image="job" id="ESb-jK-CFy"/>
                     <connections>
                         <outlet property="tableView" destination="QJp-Ph-Dkh" id="jmL-cg-IR9"/>
                     </connections>
@@ -89,6 +89,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="about_us" width="25" height="25"/>
+        <image name="job" width="25.5" height="25.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

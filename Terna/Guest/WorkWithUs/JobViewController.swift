@@ -67,7 +67,7 @@ extension JobViewController: UITableViewDelegate, UITableViewDataSource {
         cell.titleLbl.text = jobs[indexPath.row].title
         cell.descriptionLbl.text = jobs[indexPath.row].description
         cell.emojiLbl.text = jobs[indexPath.row].emoji
-        cell.setStyleCell(cornerRadius: 5, backgroundColor: Color.firstBlue)
+        cell.setStyleCell(cornerRadius: 5, backgroundColor: Color.firstBlue, textColor: .white)
         return cell
     }
 }

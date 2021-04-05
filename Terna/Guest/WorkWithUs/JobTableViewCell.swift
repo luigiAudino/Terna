@@ -25,8 +25,10 @@ class JobTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setStyleCell(cornerRadius: CGFloat, backgroundColor: UIColor) {
+    func setStyleCell(cornerRadius: CGFloat, backgroundColor: UIColor, textColor: UIColor) {
         containerView.layer.cornerRadius = cornerRadius
         containerView.backgroundColor = backgroundColor
+        titleLbl.textColor = textColor
+        descriptionLbl.textColor = textColor
     }
 }

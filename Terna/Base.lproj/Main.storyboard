@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Accedi-->
         <scene sceneID="tne-QT-ifu">
@@ -24,7 +29,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benvenuto in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pm9-Vp-Hps">
                                 <rect key="frame" x="60" y="118" width="294" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,6 +38,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="jps-tf-hij"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="loginBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uuy-eq-mmz"/>
@@ -44,6 +50,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="NpV-Sy-Ngm"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="continueBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeW-46-ZLL"/>
@@ -103,7 +110,6 @@
         <!--Navigation Controller-->
         <scene sceneID="C2U-8e-yGe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rmJ-nX-o5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xzz-TG-I61" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YWk-zd-mOi">
@@ -115,6 +121,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RGM-M4-5GZ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmJ-nX-o5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="79.710144927536234" y="118.52678571428571"/>
         </scene>

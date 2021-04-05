@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
         emailTxtFld = MDCFilledTextField()
         emailTxtFld.delegate = self
         emailTxtFld.label.text = "Email"
-        emailTxtFld.label.font = UIFont(name: "Helvetica", size: 7)
+        emailTxtFld.label.font = UIFont(name: "Lato-Regular", size: 15)
         emailTxtFld.setFilledBackgroundColor(.white, for: .normal)
         emailTxtFld.setFilledBackgroundColor(.white, for: .editing)
         emailTxtFld.sizeToFit()
@@ -59,6 +59,7 @@ class LoginViewController: UIViewController {
         passwordTxtFld.delegate = self
         passwordTxtFld.isSecureTextEntry = true
         passwordTxtFld.label.text = "Password"
+        passwordTxtFld.label.font = UIFont(name: "Lato-Regular", size: 15)
         passwordTxtFld.setFilledBackgroundColor(.white, for: .normal)
         passwordTxtFld.setFilledBackgroundColor(.white, for: .editing)
         passwordTxtFld.sizeToFit()
