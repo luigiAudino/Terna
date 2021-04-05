@@ -12,7 +12,6 @@ import MaterialComponents.MaterialTextControls_FilledTextFields
 class LoginViewController: UIViewController {
     private var emailTxtFld: MDCFilledTextField!
     private var passwordTxtFld: MDCFilledTextField!
-    private var firstBlue = UIColor(red: 0.18, green: 0.37, blue: 0.72, alpha: 1.00)
     private var eyeBtn: UIButton!
     
     @IBOutlet weak var titleLbl: UILabel!
@@ -88,7 +87,7 @@ class LoginViewController: UIViewController {
     }
     
     func setStyleNavBar() {
-        self.navigationController?.navigationBar.barTintColor = firstBlue
+        self.navigationController?.navigationBar.barTintColor = Color.firstBlue
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         self.navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
@@ -96,7 +95,7 @@ class LoginViewController: UIViewController {
     func setStyleLoginBtn() {
         loginBtn.setTitle("Accedi", for: .normal)
         loginBtn.setTitleColor(.white, for: .normal)
-        loginBtn.backgroundColor = firstBlue
+        loginBtn.backgroundColor = Color.firstBlue
         loginBtn.layer.cornerRadius = 10
         loginBtn.layer.borderWidth = 1
         loginBtn.layer.borderColor = UIColor.black.cgColor
@@ -104,11 +103,11 @@ class LoginViewController: UIViewController {
     
     func setStyleContinueBtn() {
         continueBtn.setTitle("Continua come ospite", for: .normal)
-        continueBtn.setTitleColor(firstBlue, for: .normal)
+        continueBtn.setTitleColor(Color.firstBlue, for: .normal)
         continueBtn.backgroundColor = .white
         continueBtn.layer.cornerRadius = 10
         continueBtn.layer.borderWidth = 3
-        continueBtn.layer.borderColor = firstBlue.cgColor
+        continueBtn.layer.borderColor = Color.firstBlue.cgColor
     }
     
 }

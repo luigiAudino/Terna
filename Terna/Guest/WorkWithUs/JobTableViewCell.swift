@@ -12,6 +12,7 @@ class JobTableViewCell: UITableViewCell {
     @IBOutlet weak var emojiLbl: UILabel!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var containerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +25,8 @@ class JobTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setStyleCell(cornerRadius: CGFloat, backgroundColor: UIColor) {
+        containerView.layer.cornerRadius = cornerRadius
+        containerView.backgroundColor = backgroundColor
+    }
 }

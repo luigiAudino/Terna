@@ -20,10 +20,10 @@ class JobViewController: UIViewController, UISearchControllerDelegate {
         
         initSearch()
         
-        readWorkMock()
+        readJobMock()
     }
     
-    private func readWorkMock() {
+    private func readJobMock() {
         if let path = Bundle.main.path(forResource: "job", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
@@ -42,6 +42,8 @@ class JobViewController: UIViewController, UISearchControllerDelegate {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "JobTableViewCell", bundle: nil), forCellReuseIdentifier: identifier)
+        tableView.allowsSelection = false
+        tableView.separatorStyle = .none
     }
     
     private func initSearch() {
@@ -65,9 +67,9 @@ extension JobViewController: UITableViewDelegate, UITableViewDataSource {
         cell.titleLbl.text = jobs[indexPath.row].title
         cell.descriptionLbl.text = jobs[indexPath.row].description
         cell.emojiLbl.text = jobs[indexPath.row].emoji
+        cell.setStyleCell(cornerRadius: 5, backgroundColor: Color.firstBlue)
         return cell
     }
-    
 }
 
 extension JobViewController: UISearchResultsUpdating {
@@ -75,6 +77,4 @@ extension JobViewController: UISearchResultsUpdating {
         guard let text = searchController.searchBar.text else { return }
         print(text)
     }
-    
-    
 }
