@@ -3,19 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AC18CE542BB60BB947170B3 /* Pods_Terna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */; };
 		A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89A261A631D00FCFE50 /* AppDelegate.swift */; };
 		A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89C261A631D00FCFE50 /* SceneDelegate.swift */; };
 		A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89E261A631D00FCFE50 /* ViewController.swift */; };
 		A607D8A2261A631D00FCFE50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A607D8A0261A631D00FCFE50 /* Main.storyboard */; };
 		A607D8A4261A631E00FCFE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A607D8A3261A631E00FCFE50 /* Assets.xcassets */; };
 		A607D8A7261A631E00FCFE50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A607D8A5261A631E00FCFE50 /* LaunchScreen.storyboard */; };
+		A6705B1F261A695A00DFE6DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B1E261A695A00DFE6DC /* LoginViewController.swift */; };
+		A6705B2C261A864D00DFE6DC /* GuestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6705B2B261A864D00DFE6DC /* GuestStoryboard.storyboard */; };
+		A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B2E261A86A100DFE6DC /* AboutUsViewController.swift */; };
+		A6705B33261A86F000DFE6DC /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6705B32261A86F000DFE6DC /* UserStoryboard.storyboard */; };
+		A6705B3E261A898B00DFE6DC /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B3D261A898B00DFE6DC /* WorkViewController.swift */; };
+		A6705B43261A8AC000DFE6DC /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6705B41261A8AC000DFE6DC /* WorkTableViewCell.swift */; };
+		A6705B44261A8AC000DFE6DC /* WorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6705B42261A8AC000DFE6DC /* WorkTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60BEC0086387A1DE4AE74530 /* Pods-Terna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.release.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.release.xcconfig"; sourceTree = "<group>"; };
+		9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Terna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D897261A631D00FCFE50 /* Terna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D89A261A631D00FCFE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A607D89C261A631D00FCFE50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,14 @@
 		A607D8A3261A631E00FCFE50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A607D8A6261A631E00FCFE50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A607D8A8261A631E00FCFE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6705B1E261A695A00DFE6DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A6705B2B261A864D00DFE6DC /* GuestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuestStoryboard.storyboard; sourceTree = "<group>"; };
+		A6705B2E261A86A100DFE6DC /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		A6705B32261A86F000DFE6DC /* UserStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
+		A6705B3D261A898B00DFE6DC /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		A6705B41261A8AC000DFE6DC /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
+		A6705B42261A8AC000DFE6DC /* WorkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkTableViewCell.xib; sourceTree = "<group>"; };
+		CB9F85CD92CEC21E357E130C /* Pods-Terna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.debug.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC18CE542BB60BB947170B3 /* Pods_Terna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F828C5771C705CBE1F88B36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A23A3E8154322F579C0E7C8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB9F85CD92CEC21E357E130C /* Pods-Terna.debug.xcconfig */,
+				60BEC0086387A1DE4AE74530 /* Pods-Terna.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A607D88E261A631D00FCFE50 = {
 			isa = PBXGroup;
 			children = (
 				A607D899261A631D00FCFE50 /* Terna */,
 				A607D898261A631D00FCFE50 /* Products */,
+				A23A3E8154322F579C0E7C8D /* Pods */,
+				4F828C5771C705CBE1F88B36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +94,8 @@
 		A607D899261A631D00FCFE50 /* Terna */ = {
 			isa = PBXGroup;
 			children = (
+				A6705B31261A86E400DFE6DC /* User */,
+				A6705B2A261A863000DFE6DC /* Guest */,
 				A607D89A261A631D00FCFE50 /* AppDelegate.swift */,
 				A607D89C261A631D00FCFE50 /* SceneDelegate.swift */,
 				A607D89E261A631D00FCFE50 /* ViewController.swift */,
@@ -63,8 +103,37 @@
 				A607D8A3261A631E00FCFE50 /* Assets.xcassets */,
 				A607D8A5261A631E00FCFE50 /* LaunchScreen.storyboard */,
 				A607D8A8261A631E00FCFE50 /* Info.plist */,
+				A6705B1E261A695A00DFE6DC /* LoginViewController.swift */,
 			);
 			path = Terna;
+			sourceTree = "<group>";
+		};
+		A6705B2A261A863000DFE6DC /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				A6705B40261A8AA500DFE6DC /* WorkWithUs */,
+				A6705B2B261A864D00DFE6DC /* GuestStoryboard.storyboard */,
+				A6705B2E261A86A100DFE6DC /* AboutUsViewController.swift */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
+		A6705B31261A86E400DFE6DC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A6705B32261A86F000DFE6DC /* UserStoryboard.storyboard */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		A6705B40261A8AA500DFE6DC /* WorkWithUs */ = {
+			isa = PBXGroup;
+			children = (
+				A6705B3D261A898B00DFE6DC /* WorkViewController.swift */,
+				A6705B41261A8AC000DFE6DC /* WorkTableViewCell.swift */,
+				A6705B42261A8AC000DFE6DC /* WorkTableViewCell.xib */,
+			);
+			path = WorkWithUs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A607D8AB261A631E00FCFE50 /* Build configuration list for PBXNativeTarget "Terna" */;
 			buildPhases = (
+				2286FF6600687955D8C12985 /* [CP] Check Pods Manifest.lock */,
 				A607D893261A631D00FCFE50 /* Sources */,
 				A607D894261A631D00FCFE50 /* Frameworks */,
 				A607D895261A631D00FCFE50 /* Resources */,
+				0A5B5DC1AA21BC77D5779597 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,20 +195,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6705B44261A8AC000DFE6DC /* WorkTableViewCell.xib in Resources */,
 				A607D8A7261A631E00FCFE50 /* LaunchScreen.storyboard in Resources */,
 				A607D8A4261A631E00FCFE50 /* Assets.xcassets in Resources */,
+				A6705B2C261A864D00DFE6DC /* GuestStoryboard.storyboard in Resources */,
+				A6705B33261A86F000DFE6DC /* UserStoryboard.storyboard in Resources */,
 				A607D8A2261A631D00FCFE50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A5B5DC1AA21BC77D5779597 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Terna/Pods-Terna-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Terna/Pods-Terna-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Terna/Pods-Terna-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2286FF6600687955D8C12985 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Terna-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A607D893261A631D00FCFE50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */,
+				A6705B43261A8AC000DFE6DC /* WorkTableViewCell.swift in Sources */,
+				A6705B1F261A695A00DFE6DC /* LoginViewController.swift in Sources */,
 				A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */,
+				A6705B3E261A898B00DFE6DC /* WorkViewController.swift in Sources */,
 				A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */,
 				A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +403,7 @@
 		};
 		A607D8AC261A631E00FCFE50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9F85CD92CEC21E357E130C /* Pods-Terna.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +417,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.audino.luigi.Terna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A607D8AD261A631E00FCFE50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BEC0086387A1DE4AE74530 /* Pods-Terna.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.audino.luigi.Terna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
