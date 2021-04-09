@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,7 +121,31 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pm-z3-bEr">
                                 <rect key="frame" x="0.0" y="88" width="414" height="130"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Iw-Xb-eeX">
+                                        <rect key="frame" x="0.0" y="126" width="200" height="4"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="kBf-lk-jp5"/>
+                                            <constraint firstAttribute="height" constant="4" id="tNN-3Z-dxk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdE-uO-Pnq">
+                                        <rect key="frame" x="214" y="126" width="200" height="4"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="4" id="QKs-Aw-5fL"/>
+                                            <constraint firstAttribute="width" constant="200" id="ViT-cw-p12"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HdE-uO-Pnq" secondAttribute="trailing" id="7Uh-aa-kBg"/>
+                                    <constraint firstItem="9Iw-Xb-eeX" firstAttribute="leading" secondItem="9pm-z3-bEr" secondAttribute="leading" id="Y2e-Tr-TV1"/>
+                                    <constraint firstAttribute="bottom" secondItem="HdE-uO-Pnq" secondAttribute="bottom" id="f5a-a4-N0n"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Iw-Xb-eeX" secondAttribute="bottom" id="ybS-Wv-uNm"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NPa-6E-eYZ"/>
@@ -138,6 +163,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="PIPPOOOO" id="Paz-DX-CA5"/>
                     <connections>
+                        <outlet property="leftStoryAnimatedView" destination="9Iw-Xb-eeX" id="BC6-7E-rzv"/>
+                        <outlet property="leftStoryAnimatedViewWidth" destination="kBf-lk-jp5" id="T41-ck-Fl8"/>
+                        <outlet property="rightStoryAnimatedView" destination="HdE-uO-Pnq" id="dZV-ft-2VM"/>
+                        <outlet property="rightStoryAnimatedViewWidth" destination="ViT-cw-p12" id="E5z-WC-9rd"/>
                         <outlet property="stepsView" destination="mi3-I3-Hxg" id="nFG-u0-CTJ"/>
                         <outlet property="storiesContainerView" destination="9pm-z3-bEr" id="tyK-6v-rBA"/>
                     </connections>
@@ -196,6 +225,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

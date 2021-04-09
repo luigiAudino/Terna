@@ -13,8 +13,13 @@ class RoadMap: UIViewController
     
     @IBOutlet private weak var stepsView: TimeLineView?
     @IBOutlet weak var storiesContainerView: UIView!
-    let businessanager = BusinessManager()
-    
+    @IBOutlet weak var leftStoryAnimatedView: UIView!
+    @IBOutlet weak var rightStoryAnimatedView: UIView!
+    @IBOutlet weak var rightStoryAnimatedViewWidth: NSLayoutConstraint!
+    @IBOutlet weak var leftStoryAnimatedViewWidth: NSLayoutConstraint!
+    private var progressViewOne: UIView?
+    private var progressViewTwo: UIView?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let logo = UIImage(named: "Logo_Terna_clear")
@@ -22,6 +27,7 @@ class RoadMap: UIViewController
         imageView.contentMode = .scaleAspectFit
         navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor = Color.firstBlue
+//        self.addProgressViewOnBottomStories()
         self.addStories()
         self.stepsView?.delegate = self
         self.stepsView?.loadSteps()
@@ -29,7 +35,13 @@ class RoadMap: UIViewController
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        self.rightStoryAnimatedViewWidth.constant = self.view.frame.size.width / 2
+        self.leftStoryAnimatedViewWidth.constant = self.view.frame.size.width / 2
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        self.animateBottomStories()
     }
     
     private func addStories() {
@@ -37,12 +49,29 @@ class RoadMap: UIViewController
         self.storiesContainerView.addSubview(storiesViewsController.view)
         self.addChild(storiesViewsController)
         storiesViewsController.didMove(toParent: self)
-        storiesViewsController.view.frame = CGRect(x:0, y: 0, width: storiesContainerView.frame.width, height: storiesContainerView.frame.height)
+        storiesViewsController.view.frame = CGRect(x:0, y: 0, width: storiesContainerView.frame.width, height: storiesContainerView.frame.height - 10)
         BusinessManager.readStoryMock { (stories) in
             storiesViewsController.loadWithStories(stories: stories)
         }
+    }
+    
+    
+    private func animateBottomStories() {
+        UIView.animate(withDuration: 1.5) {
+            self.progressViewOne?.frame.size.width = self.leftStoryAnimatedView.frame.size.width
+            self.progressViewTwo?.frame.size.width = 0
+        }
+    }
+    
+    private func addProgressViewOnBottomStories() {
+        self.progressViewOne = UIView(frame: self.leftStoryAnimatedView.frame)
+        self.progressViewOne?.frame.size.width = 0
+        self.progressViewOne?.backgroundColor = Color.firstBlue
+        self.progressViewTwo = UIView(frame: self.rightStoryAnimatedView.frame)
+        self.progressViewTwo?.backgroundColor = .white
         
-        
+        self.leftStoryAnimatedView.addSubview(progressViewOne!)
+        self.rightStoryAnimatedView.addSubview(progressViewTwo!)
     }
     
     private func mockSteps() -> [TimeLineStep] {
