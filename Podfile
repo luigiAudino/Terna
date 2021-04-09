@@ -6,7 +6,6 @@ target 'Terna' do
   use_frameworks!
 
   # Pods for Terna
-
   pod 'MaterialComponents/TextControls+FilledTextAreas'
   pod 'MaterialComponents/TextControls+FilledTextFields'
 end
