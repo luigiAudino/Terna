@@ -8,22 +8,18 @@
 import UIKit
 
 class ChatbotViewController: UIViewController {
-
+    @IBOutlet weak var webView: UIWebView!
+    
+    let url = "https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=af876ecc-6438-4ae0-a97e-89777a7ce72f&serviceInstanceID=b1dfa529-0473-4c7f-95b8-db55961c4a0e"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initWebView()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func initWebView() {
+        webView.loadRequest(URLRequest(url: URL(string: url)!))
     }
-    */
-
 }
