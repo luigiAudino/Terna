@@ -12,6 +12,7 @@ class RoadMap: UIViewController
 {
     
     @IBOutlet private weak var stepsView: TimeLineView?
+    @IBOutlet weak var storiesContainerView: UIView!
     
     
     override func viewDidLoad() {
@@ -21,7 +22,7 @@ class RoadMap: UIViewController
         imageView.contentMode = .scaleAspectFit
         navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor = Color.firstBlue
-
+        self.addStories()
         self.stepsView?.delegate = self
         self.stepsView?.loadSteps()
     }
@@ -31,11 +32,18 @@ class RoadMap: UIViewController
         
     }
     
+    private func addStories() {
+        let storiesViewsController = StoriesViewController()
+        self.storiesContainerView.addSubview(storiesViewsController.view)
+        storiesViewsController.didMove(toParent: self)
+        storiesViewsController.view.frame = CGRect(x:0, y: 0, width: storiesContainerView.frame.width, height: storiesContainerView.frame.height)
+    }
+    
     private func mockSteps() -> [TimeLineStep] {
         
         var stepsArray: [TimeLineStep] = []
         
-        let stepsArrayDic: [Dictionary<String, Any>] = [["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Uno", "stepDescription":"Descrizione bella uno", "color":UIColor(hexString: "FFAA2A", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Due", "stepDescription":"Descrizione bella due", "color":UIColor(hexString: "FF7556", alpha: 1.0), "isStepActive": false],["completed":false, "completedPercentage":80.0, "stepTitle":"Titolo Tre", "stepDescription":"Descrizione bella tre", "color":UIColor(hexString: "C77878", alpha: 1.0), "isStepActive": true],["completed":false, "completedPercentage":0.0, "stepTitle":"Titolo Quattro", "stepDescription":"Descrizione bella quattro", "color":UIColor(hexString: "00A8DE", alpha: 1.0),"isStepActive": false],["completed":false, "completedPercentage":0.0, "stepTitle":"Titolo Cinque", "stepDescription":"Descrizione bella cinque", "color":UIColor(hexString: "00AFBB", alpha: 1.0),"isStepActive": false]]
+        let stepsArrayDic: [Dictionary<String, Any>] = [["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Uno", "stepDescription":"Descrizione bella uno", "color":UIColor(hexString: "FFAA2A", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Due", "stepDescription":"Descrizione bella due", "color":UIColor(hexString: "FF7556", alpha: 1.0), "isStepActive": false],["completed":false, "completedPercentage":50.0, "stepTitle":"Titolo Tre", "stepDescription":"Descrizione bella tre", "color":UIColor(hexString: "C77878", alpha: 1.0), "isStepActive": true],["completed":false, "completedPercentage":0.0, "stepTitle":"Titolo Quattro", "stepDescription":"Descrizione bella quattro", "color":UIColor(hexString: "00A8DE", alpha: 1.0),"isStepActive": false],["completed":false, "completedPercentage":0.0, "stepTitle":"Titolo Cinque", "stepDescription":"Descrizione bella cinque", "color":UIColor(hexString: "00AFBB", alpha: 1.0),"isStepActive": false]]
         
         stepsArrayDic.forEach { (stepDic) in
             

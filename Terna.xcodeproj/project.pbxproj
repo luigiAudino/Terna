@@ -15,6 +15,10 @@
 		6264188926205E6B00D337C6 /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264188826205E6B00D337C6 /* TimeLineTableViewCell.swift */; };
 		6264189D262067BF00D337C6 /* RoadMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264189C262067BF00D337C6 /* RoadMap.swift */; };
 		626418A12620689000D337C6 /* RoadMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626418A02620689000D337C6 /* RoadMap.storyboard */; };
+		626418AA2620B82A00D337C6 /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626418A82620B82A00D337C6 /* StoriesViewController.swift */; };
+		626418AB2620B82A00D337C6 /* StoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626418A92620B82A00D337C6 /* StoriesViewController.xib */; };
+		626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */; };
+		626418B32620BC1900D337C6 /* StoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */; };
 		A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89A261A631D00FCFE50 /* AppDelegate.swift */; };
 		A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89C261A631D00FCFE50 /* SceneDelegate.swift */; };
 		A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89E261A631D00FCFE50 /* ViewController.swift */; };
@@ -62,6 +66,10 @@
 		6264188826205E6B00D337C6 /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
 		6264189C262067BF00D337C6 /* RoadMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadMap.swift; sourceTree = "<group>"; };
 		626418A02620689000D337C6 /* RoadMap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RoadMap.storyboard; sourceTree = "<group>"; };
+		626418A82620B82A00D337C6 /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
+		626418A92620B82A00D337C6 /* StoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesViewController.xib; sourceTree = "<group>"; };
+		626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Terna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D897261A631D00FCFE50 /* Terna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D89A261A631D00FCFE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +185,49 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		626418A42620B7EA00D337C6 /* EXTStories */ = {
+			isa = PBXGroup;
+			children = (
+				626418AE2620B83200D337C6 /* Controller */,
+				626418A72620B7FC00D337C6 /* Resources */,
+				626418A62620B7F700D337C6 /* View */,
+				626418A52620B7F100D337C6 /* Model */,
+			);
+			path = EXTStories;
+			sourceTree = "<group>";
+		};
+		626418A52620B7F100D337C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		626418A62620B7F700D337C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		626418A72620B7FC00D337C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */,
+				626418A92620B82A00D337C6 /* StoriesViewController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		626418AE2620B83200D337C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				626418A82620B82A00D337C6 /* StoriesViewController.swift */,
+				626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A23A3E8154322F579C0E7C8D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +258,7 @@
 		A607D899261A631D00FCFE50 /* Terna */ = {
 			isa = PBXGroup;
 			children = (
+				626418A42620B7EA00D337C6 /* EXTStories */,
 				6264188C2620604200D337C6 /* RoadMap */,
 				6264187826205B5200D337C6 /* EXTRoadMap */,
 				A6B0E804261B6BAF000C5767 /* Font */,
@@ -378,6 +430,7 @@
 				A6B0E81F261B6C0C000C5767 /* Lato-ThinItalic.ttf in Resources */,
 				A6B0E821261B6C0C000C5767 /* Lato-Heavy.ttf in Resources */,
 				A6B0E81D261B6C0C000C5767 /* Lato-Medium.ttf in Resources */,
+				626418AB2620B82A00D337C6 /* StoriesViewController.xib in Resources */,
 				A607D8A4261A631E00FCFE50 /* Assets.xcassets in Resources */,
 				A6B0E818261B6C0C000C5767 /* Lato-Light.ttf in Resources */,
 				A6B0E825261B6C0C000C5767 /* Lato-Semibold.ttf in Resources */,
@@ -390,6 +443,7 @@
 				A6705B33261A86F000DFE6DC /* UserStoryboard.storyboard in Resources */,
 				A6B0E81C261B6C0C000C5767 /* Lato-Regular.ttf in Resources */,
 				A607D8A2261A631D00FCFE50 /* Main.storyboard in Resources */,
+				626418B32620BC1900D337C6 /* StoriesCollectionViewCell.xib in Resources */,
 				A68BA17B261A971D00ACC4C7 /* job.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626418AA2620B82A00D337C6 /* StoriesViewController.swift in Sources */,
 				6264188926205E6B00D337C6 /* TimeLineTableViewCell.swift in Sources */,
 				6264188626205DBA00D337C6 /* TimeLineInnerView.swift in Sources */,
 				A6BF1262261A9C49006F0AB3 /* Result.swift in Sources */,
@@ -453,6 +508,7 @@
 				A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */,
 				A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */,
 				A6705B1F261A695A00DFE6DC /* LoginViewController.swift in Sources */,
+				626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */,
 				6264187B26205C3D00D337C6 /* TimeLineView.swift in Sources */,
 				6264188026205C8700D337C6 /* TimeLineStepModel.swift in Sources */,
 				A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */,

@@ -118,19 +118,28 @@
                                     <outlet property="tableView" destination="De2-jx-PWR" id="1rU-Z1-S9d"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pm-z3-bEr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="130"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NPa-6E-eYZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NPa-6E-eYZ" firstAttribute="bottom" secondItem="mi3-I3-Hxg" secondAttribute="bottom" id="69i-6o-nhe"/>
+                            <constraint firstItem="mi3-I3-Hxg" firstAttribute="top" secondItem="9pm-z3-bEr" secondAttribute="bottom" id="Mig-5j-keZ"/>
+                            <constraint firstItem="9pm-z3-bEr" firstAttribute="top" secondItem="NPa-6E-eYZ" secondAttribute="top" id="NX3-xF-7YG"/>
+                            <constraint firstItem="9pm-z3-bEr" firstAttribute="leading" secondItem="NPa-6E-eYZ" secondAttribute="leading" id="Ohd-Vm-sTO"/>
                             <constraint firstItem="mi3-I3-Hxg" firstAttribute="top" secondItem="NPa-6E-eYZ" secondAttribute="top" constant="130" id="UdM-0c-KUY"/>
                             <constraint firstItem="mi3-I3-Hxg" firstAttribute="leading" secondItem="NPa-6E-eYZ" secondAttribute="leading" id="fqB-IS-eSU"/>
+                            <constraint firstItem="NPa-6E-eYZ" firstAttribute="trailing" secondItem="9pm-z3-bEr" secondAttribute="trailing" id="jyT-JQ-Eaa"/>
                             <constraint firstItem="NPa-6E-eYZ" firstAttribute="trailing" secondItem="mi3-I3-Hxg" secondAttribute="trailing" id="uyp-El-nj9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PIPPOOOO" id="Paz-DX-CA5"/>
                     <connections>
                         <outlet property="stepsView" destination="mi3-I3-Hxg" id="nFG-u0-CTJ"/>
+                        <outlet property="storiesContainerView" destination="9pm-z3-bEr" id="tyK-6v-rBA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbc-aK-KZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
