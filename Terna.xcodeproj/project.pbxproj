@@ -14,6 +14,7 @@
 		6264188626205DBA00D337C6 /* TimeLineInnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264188526205DBA00D337C6 /* TimeLineInnerView.swift */; };
 		6264188926205E6B00D337C6 /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264188826205E6B00D337C6 /* TimeLineTableViewCell.swift */; };
 		626418922620607A00D337C6 /* RoadMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626418912620607A00D337C6 /* RoadMap.storyboard */; };
+		6264189D262067BF00D337C6 /* vcvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264189C262067BF00D337C6 /* vcvc.swift */; };
 		A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89A261A631D00FCFE50 /* AppDelegate.swift */; };
 		A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89C261A631D00FCFE50 /* SceneDelegate.swift */; };
 		A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89E261A631D00FCFE50 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		6264188526205DBA00D337C6 /* TimeLineInnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineInnerView.swift; sourceTree = "<group>"; };
 		6264188826205E6B00D337C6 /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
 		626418912620607A00D337C6 /* RoadMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = RoadMap.storyboard; path = ../../../../Documents/RoadMap.storyboard; sourceTree = "<group>"; };
+		6264189C262067BF00D337C6 /* vcvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcvc.swift; sourceTree = "<group>"; };
 		9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Terna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D897261A631D00FCFE50 /* Terna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D89A261A631D00FCFE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		6264188E2620606100D337C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6264189C262067BF00D337C6 /* vcvc.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				A6BF1262261A9C49006F0AB3 /* Result.swift in Sources */,
 				A68BA16F261A93EE00ACC4C7 /* Job.swift in Sources */,
 				A6B0E802261B68F7000C5767 /* Color.swift in Sources */,
+				6264189D262067BF00D337C6 /* vcvc.swift in Sources */,
 				A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */,
 				A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */,
 				A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */,
