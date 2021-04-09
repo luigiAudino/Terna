@@ -13,8 +13,8 @@
 		6264188326205CAF00D337C6 /* TimeLineCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264188226205CAF00D337C6 /* TimeLineCellModel.swift */; };
 		6264188626205DBA00D337C6 /* TimeLineInnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264188526205DBA00D337C6 /* TimeLineInnerView.swift */; };
 		6264188926205E6B00D337C6 /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264188826205E6B00D337C6 /* TimeLineTableViewCell.swift */; };
-		626418922620607A00D337C6 /* RoadMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626418912620607A00D337C6 /* RoadMap.storyboard */; };
 		6264189D262067BF00D337C6 /* vcvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264189C262067BF00D337C6 /* vcvc.swift */; };
+		626418A12620689000D337C6 /* RoadMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626418A02620689000D337C6 /* RoadMap.storyboard */; };
 		A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89A261A631D00FCFE50 /* AppDelegate.swift */; };
 		A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89C261A631D00FCFE50 /* SceneDelegate.swift */; };
 		A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89E261A631D00FCFE50 /* ViewController.swift */; };
@@ -60,8 +60,8 @@
 		6264188226205CAF00D337C6 /* TimeLineCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCellModel.swift; sourceTree = "<group>"; };
 		6264188526205DBA00D337C6 /* TimeLineInnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineInnerView.swift; sourceTree = "<group>"; };
 		6264188826205E6B00D337C6 /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
-		626418912620607A00D337C6 /* RoadMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = RoadMap.storyboard; path = ../../../../Documents/RoadMap.storyboard; sourceTree = "<group>"; };
 		6264189C262067BF00D337C6 /* vcvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcvc.swift; sourceTree = "<group>"; };
+		626418A02620689000D337C6 /* RoadMap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RoadMap.storyboard; sourceTree = "<group>"; };
 		9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Terna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D897261A631D00FCFE50 /* Terna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D89A261A631D00FCFE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		6264188D2620605300D337C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				626418912620607A00D337C6 /* RoadMap.storyboard */,
+				626418A02620689000D337C6 /* RoadMap.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 				A6B0E81B261B6C0C000C5767 /* Lato-Black.ttf in Resources */,
 				A6B0E823261B6C0C000C5767 /* Lato-Hairline.ttf in Resources */,
 				A6B0E824261B6C0C000C5767 /* Lato-Bold.ttf in Resources */,
-				626418922620607A00D337C6 /* RoadMap.storyboard in Resources */,
+				626418A12620689000D337C6 /* RoadMap.storyboard in Resources */,
 				A6B0E81F261B6C0C000C5767 /* Lato-ThinItalic.ttf in Resources */,
 				A6B0E821261B6C0C000C5767 /* Lato-Heavy.ttf in Resources */,
 				A6B0E81D261B6C0C000C5767 /* Lato-Medium.ttf in Resources */,
