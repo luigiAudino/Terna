@@ -2,7 +2,7 @@
 //  Result.swift
 //  Terna
 //
-//  Created by Luigi Audino on 05/04/21.
+//  Created by Luigi Audino on 09/04/21.
 //
 
 import Foundation
