@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3AC18CE542BB60BB947170B3 /* Pods_Terna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */; };
-		620905FB2620D9150002A549 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620905FA2620D9150002A549 /* Story.swift */; };
-		620905FE2620D94A0002A549 /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = 620905FD2620D94A0002A549 /* story.json */; };
 		620906022620D9E20002A549 /* BusinessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620906012620D9E20002A549 /* BusinessManager.swift */; };
 		6264187B26205C3D00D337C6 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264187A26205C3D00D337C6 /* TimeLineView.swift */; };
 		6264188026205C8700D337C6 /* TimeLineStepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264187F26205C8700D337C6 /* TimeLineStepModel.swift */; };
@@ -60,12 +58,14 @@
 		A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1264261A9CB3006F0AB3 /* JobResult.swift */; };
 		A6D3E5402620D11C00618710 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3E53F2620D11C00618710 /* Story.swift */; };
 		A6D3E5432620D30600618710 /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E5422620D30600618710 /* story.json */; };
+		A6D3E5472620E9A200618710 /* StoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3E5462620E9A200618710 /* StoryDetailViewController.swift */; };
+		A6D3E5512620ED7200618710 /* StoryDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3E54F2620ED7200618710 /* StoryDetailCollectionViewCell.swift */; };
+		A6D3E5522620ED7200618710 /* StoryDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E5502620ED7200618710 /* StoryDetailCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60BEC0086387A1DE4AE74530 /* Pods-Terna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.release.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.release.xcconfig"; sourceTree = "<group>"; };
 		620905FA2620D9150002A549 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		620905FD2620D94A0002A549 /* story.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story.json; sourceTree = "<group>"; };
 		620906012620D9E20002A549 /* BusinessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessManager.swift; sourceTree = "<group>"; };
 		6264187A26205C3D00D337C6 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
 		6264187F26205C8700D337C6 /* TimeLineStepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineStepModel.swift; sourceTree = "<group>"; };
@@ -119,6 +119,9 @@
 		A6BF1264261A9CB3006F0AB3 /* JobResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResult.swift; sourceTree = "<group>"; };
 		A6D3E53F2620D11C00618710 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		A6D3E5422620D30600618710 /* story.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story.json; sourceTree = "<group>"; };
+		A6D3E5462620E9A200618710 /* StoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailViewController.swift; sourceTree = "<group>"; };
+		A6D3E54F2620ED7200618710 /* StoryDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6D3E5502620ED7200618710 /* StoryDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryDetailCollectionViewCell.xib; sourceTree = "<group>"; };
 		CB9F85CD92CEC21E357E130C /* Pods-Terna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.debug.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +245,9 @@
 			children = (
 				626418A82620B82A00D337C6 /* StoriesViewController.swift */,
 				626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */,
+				A6D3E5462620E9A200618710 /* StoryDetailViewController.swift */,
+				A6D3E54F2620ED7200618710 /* StoryDetailCollectionViewCell.swift */,
+				A6D3E5502620ED7200618710 /* StoryDetailCollectionViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 				A6B0E81E261B6C0C000C5767 /* Lato-MediumItalic.ttf in Resources */,
 				A6B0E820261B6C0C000C5767 /* Lato-Thin.ttf in Resources */,
 				A6B0E826261B6C0C000C5767 /* Lato-BoldItalic.ttf in Resources */,
+				A6D3E5522620ED7200618710 /* StoryDetailCollectionViewCell.xib in Resources */,
 				A6705B2C261A864D00DFE6DC /* GuestStoryboard.storyboard in Resources */,
 				A6705B33261A86F000DFE6DC /* UserStoryboard.storyboard in Resources */,
 				A6B0E81C261B6C0C000C5767 /* Lato-Regular.ttf in Resources */,
@@ -529,8 +536,10 @@
 				6264189D262067BF00D337C6 /* RoadMap.swift in Sources */,
 				A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */,
 				A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */,
+				A6D3E5512620ED7200618710 /* StoryDetailCollectionViewCell.swift in Sources */,
 				620906022620D9E20002A549 /* BusinessManager.swift in Sources */,
 				A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */,
+				A6D3E5472620E9A200618710 /* StoryDetailViewController.swift in Sources */,
 				A6705B1F261A695A00DFE6DC /* LoginViewController.swift in Sources */,
 				626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */,
 				6264187B26205C3D00D337C6 /* TimeLineView.swift in Sources */,
