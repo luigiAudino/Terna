@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,24 +17,44 @@
                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rom-ID-gUj">
-                        <rect key="frame" x="10" y="10" width="50" height="50"/>
-                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-3P-eJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rom-ID-gUj">
+                                <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rom-ID-gUj" secondAttribute="height" multiplier="1:1" id="VM0-fg-4Zb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rom-ID-gUj" secondAttribute="bottom" constant="5" id="JJc-NH-wOg"/>
+                            <constraint firstAttribute="width" secondItem="sL8-3P-eJ1" secondAttribute="height" multiplier="1:1" id="bU4-9E-Xby"/>
+                            <constraint firstItem="rom-ID-gUj" firstAttribute="top" secondItem="sL8-3P-eJ1" secondAttribute="top" constant="5" id="g0c-Sd-hMe"/>
+                            <constraint firstItem="rom-ID-gUj" firstAttribute="leading" secondItem="sL8-3P-eJ1" secondAttribute="leading" constant="5" id="vdh-Ae-LES"/>
+                            <constraint firstAttribute="trailing" secondItem="rom-ID-gUj" secondAttribute="trailing" constant="5" id="zip-wa-CV2"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="rom-ID-gUj" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-22" id="76t-Gi-iTJ"/>
-                <constraint firstAttribute="trailing" secondItem="rom-ID-gUj" secondAttribute="trailing" constant="10" id="B0L-IA-2X2"/>
-                <constraint firstItem="rom-ID-gUj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="MiZ-za-aDz"/>
-                <constraint firstItem="rom-ID-gUj" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Xxz-Ri-pE3"/>
-                <constraint firstAttribute="bottom" secondItem="rom-ID-gUj" secondAttribute="bottom" constant="10" id="cHW-LB-n76"/>
-                <constraint firstItem="rom-ID-gUj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="wtU-kk-G4R"/>
+                <constraint firstItem="sL8-3P-eJ1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="T6B-4C-Etu"/>
+                <constraint firstItem="sL8-3P-eJ1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZBP-Tw-i1S"/>
+                <constraint firstAttribute="trailing" secondItem="sL8-3P-eJ1" secondAttribute="trailing" id="dtV-sJ-yQ6"/>
+                <constraint firstAttribute="bottom" secondItem="sL8-3P-eJ1" secondAttribute="bottom" id="swj-11-HSz"/>
             </constraints>
             <connections>
+                <outlet property="CircleImage" destination="sL8-3P-eJ1" id="i87-bC-OJs"/>
                 <outlet property="imageView" destination="rom-ID-gUj" id="iZD-dY-FXR"/>
             </connections>
             <point key="canvasLocation" x="103" y="109"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
