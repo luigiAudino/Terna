@@ -55,6 +55,8 @@
 		A6B0E828261B6C0C000C5767 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B0E816261B6C0C000C5767 /* Lato-HeavyItalic.ttf */; };
 		A6BF1262261A9C49006F0AB3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1261261A9C49006F0AB3 /* Result.swift */; };
 		A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BF1264261A9CB3006F0AB3 /* JobResult.swift */; };
+		A6D3E5402620D11C00618710 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3E53F2620D11C00618710 /* Story.swift */; };
+		A6D3E5432620D30600618710 /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E5422620D30600618710 /* story.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +111,8 @@
 		A6B0E816261B6C0C000C5767 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
 		A6BF1261261A9C49006F0AB3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A6BF1264261A9CB3006F0AB3 /* JobResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResult.swift; sourceTree = "<group>"; };
+		A6D3E53F2620D11C00618710 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		A6D3E5422620D30600618710 /* story.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story.json; sourceTree = "<group>"; };
 		CB9F85CD92CEC21E357E130C /* Pods-Terna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.debug.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -313,6 +317,7 @@
 				A68BA16E261A93EE00ACC4C7 /* Job.swift */,
 				A6BF1261261A9C49006F0AB3 /* Result.swift */,
 				A6BF1264261A9CB3006F0AB3 /* JobResult.swift */,
+				A6D3E53F2620D11C00618710 /* Story.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 		A68BA179261A960400ACC4C7 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				A6D3E5422620D30600618710 /* story.json */,
 				A68BA17A261A971D00ACC4C7 /* job.json */,
 			);
 			path = Mock;
@@ -424,6 +430,7 @@
 				A607D8A7261A631E00FCFE50 /* LaunchScreen.storyboard in Resources */,
 				A6B0E81A261B6C0C000C5767 /* Lato-SemiboldItalic.ttf in Resources */,
 				A6B0E81B261B6C0C000C5767 /* Lato-Black.ttf in Resources */,
+				A6D3E5432620D30600618710 /* story.json in Resources */,
 				A6B0E823261B6C0C000C5767 /* Lato-Hairline.ttf in Resources */,
 				A6B0E824261B6C0C000C5767 /* Lato-Bold.ttf in Resources */,
 				626418A12620689000D337C6 /* RoadMap.storyboard in Resources */,
@@ -516,6 +523,7 @@
 				A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */,
 				6264188326205CAF00D337C6 /* TimeLineCellModel.swift in Sources */,
 				A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */,
+				A6D3E5402620D11C00618710 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
