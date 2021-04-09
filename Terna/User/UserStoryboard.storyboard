@@ -156,16 +156,28 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" id="Xsc-VD-uTd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k6g-Nf-z4H">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="YV1-uF-tbw" kind="relationship" relationship="viewControllers" id="fDE-AZ-IL2"/>
+                        <segue destination="G5L-mR-T85" kind="relationship" relationship="viewControllers" id="HGr-4P-9Wp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ryA-S0-JHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6934.7826086956529" y="450.66964285714283"/>
+        </scene>
+        <!--chiSiamoLoggedUser-->
+        <scene sceneID="D0t-ud-L0v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GuestStoryboard" referencedIdentifier="chiSiamoLoggedUser" id="G5L-mR-T85" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="rVs-CB-dcc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AmE-MT-YMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6915" y="895"/>
         </scene>
     </scenes>
     <resources>

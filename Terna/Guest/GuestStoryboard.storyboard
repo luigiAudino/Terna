@@ -13,6 +13,22 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ysp-MJ-9cu">
+            <objects>
+                <navigationController storyboardIdentifier="chiSiamoLoggedUser" useStoryboardIdentifierAsRestorationIdentifier="YES" id="geN-vK-PTy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="35K-6f-NHl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fpJ-zX-BRV" kind="relationship" relationship="rootViewController" id="Z93-W4-jgJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="onV-bG-VWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="-376"/>
+        </scene>
         <!--Chi siamo-->
         <scene sceneID="4ZF-uU-F6J">
             <objects>
@@ -22,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KG8-t7-8W0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YR-gO-sD2" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1062"/>
@@ -32,11 +48,11 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1U-EA-sPh">
                                                 <rect key="frame" x="30" y="348" width="354" height="684"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum mi quis arcu efficitur efficitur et nec tellus. Vestibulum auctor sagittis massa, ut sagittis tellus viverra non. Nunc vehicula efficitur tortor, id aliquam nisi aliquet in. Vestibulum fringilla maximus mi vel mattis. Donec euismod feugiat urna non iaculis. Sed sagittis mollis metus vel bibendum. Nulla facilisi. Nullam sed varius orci.
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum mi quis arcu efficitur efficitur et nec tellus. Vestibulum auctor sagittis massa, ut sagittis tellus viverra non. Nunc vehicula efficitur tortor, id aliquam nisi aliquet in. Vestibulum fringilla maximus mi vel mattis. Donec euismod feugiat urna non iaculis. Sed sagittis mollis metus vel bibendum. Nulla facilisi. Nullam sed varius orci.
 
 Duis venenatis in purus id tristique. Aliquam rhoncus posuere nulla, non dignissim tellus vulputate ut. Aliquam ullamcorper semper dignissim. Nam feugiat mattis vulputate. In hac habitasse platea dictumst. Aenean mattis nulla in nulla imperdiet, nec fringilla neque congue. Nam nec tincidunt augue. Cras pulvinar, quam vitae rhoncus luctus, ipsum metus facilisis neque, eu pellentesque sapien purus ac diam. Nullam a augue nec turpis lobortis fringilla nec gravida nisl. Mauris sagittis dolor libero, vehicula finibus est sagittis ac. Nunc eu risus massa. Proin in varius nisl. Maecenas tincidunt, nisl eget convallis rutrum, risus augue aliquam erat, ac bibendum eros purus et ante. Mauris ac semper lorem.
 
-Duis scelerisque ex libero, id elementum sem laoreet luctus. Nullam et sagittis turpis, ac ornare libero. Donec aliquam ornare erat scelerisque iaculis. Suspendisse volutpat dolor vitae massa condimentum, sit amet ullamcorper lectus iaculis. Suspendisse sed nulla dictum, dapibus felis a, aliquet justo. Duis nec lorem accumsan, scelerisque orci eu, venenatis felis. Ut interdum purus non efficitur ultricies. Nunc tincidunt sodales dolor, finibus commodo nunc rhoncus sed. Praesent a ex semper, vehicula enim ut, feugiat elit. Fusce libero arcu, imperdiet id semper quis, scelerisque quis dolor. In eros magna, facilisis quis sodales quis, iaculis at nibh. Vestibulum tellus augue, semper ut lobortis ac, rhoncus eu arcu.</mutableString>
+Duis scelerisque ex libero, id elementum sem laoreet luctus. Nullam et sagittis turpis, ac ornare libero. Donec aliquam ornare erat scelerisque iaculis. Suspendisse volutpat dolor vitae massa condimentum, sit amet ullamcorper lectus iaculis. Suspendisse sed nulla dictum, dapibus felis a, aliquet justo. Duis nec lorem accumsan, scelerisque orci eu, venenatis felis. Ut interdum purus non efficitur ultricies. Nunc tincidunt sodales dolor, finibus commodo nunc rhoncus sed. Praesent a ex semper, vehicula enim ut, feugiat elit. Fusce libero arcu, imperdiet id semper quis, scelerisque quis dolor. In eros magna, facilisis quis sodales quis, iaculis at nibh. Vestibulum tellus augue, semper ut lobortis ac, rhoncus eu arcu.</string>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -131,6 +147,9 @@ Duis scelerisque ex libero, id elementum sem laoreet luctus. Nullam et sagittis 
             <point key="canvasLocation" x="1692.753623188406" y="660.9375"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Z93-W4-jgJ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="about_us" width="25" height="25"/>
         <image name="graph" width="375" height="348"/>
