@@ -19,8 +19,9 @@ class RoadMap: UIViewController
         let logo = UIImage(named: "Logo_Terna_clear")
         let imageView = UIImageView(image:logo)
         imageView.contentMode = .scaleAspectFit
-        self.navigationController?.navigationItem.titleView = imageView
-        self.navigationController?.navigationItem.title = "Pippo Franco"
+//        self.navigationController?.navigationItem.titleView = imageView
+//        navigationItem.titleView = imageView
+//        self.navigationController?.navigationItem.title = "Pippo Franco"
         self.stepsView?.delegate = self
         self.stepsView?.loadSteps()
     }
