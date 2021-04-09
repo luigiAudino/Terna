@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3AC18CE542BB60BB947170B3 /* Pods_Terna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */; };
+		620905FB2620D9150002A549 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620905FA2620D9150002A549 /* Story.swift */; };
+		620905FE2620D94A0002A549 /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = 620905FD2620D94A0002A549 /* story.json */; };
+		620906022620D9E20002A549 /* BusinessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620906012620D9E20002A549 /* BusinessManager.swift */; };
 		6264187B26205C3D00D337C6 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264187A26205C3D00D337C6 /* TimeLineView.swift */; };
 		6264188026205C8700D337C6 /* TimeLineStepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264187F26205C8700D337C6 /* TimeLineStepModel.swift */; };
 		6264188326205CAF00D337C6 /* TimeLineCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264188226205CAF00D337C6 /* TimeLineCellModel.swift */; };
@@ -59,6 +62,9 @@
 
 /* Begin PBXFileReference section */
 		60BEC0086387A1DE4AE74530 /* Pods-Terna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.release.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.release.xcconfig"; sourceTree = "<group>"; };
+		620905FA2620D9150002A549 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		620905FD2620D94A0002A549 /* story.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story.json; sourceTree = "<group>"; };
+		620906012620D9E20002A549 /* BusinessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessManager.swift; sourceTree = "<group>"; };
 		6264187A26205C3D00D337C6 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
 		6264187F26205C8700D337C6 /* TimeLineStepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineStepModel.swift; sourceTree = "<group>"; };
 		6264188226205CAF00D337C6 /* TimeLineCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCellModel.swift; sourceTree = "<group>"; };
@@ -130,6 +136,14 @@
 				9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		620906002620D9D50002A549 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				620906012620D9E20002A549 /* BusinessManager.swift */,
+			);
+			path = Business;
 			sourceTree = "<group>";
 		};
 		6264187826205B5200D337C6 /* EXTRoadMap */ = {
@@ -258,6 +272,7 @@
 		A607D899261A631D00FCFE50 /* Terna */ = {
 			isa = PBXGroup;
 			children = (
+				620906002620D9D50002A549 /* Business */,
 				626418A42620B7EA00D337C6 /* EXTStories */,
 				6264188C2620604200D337C6 /* RoadMap */,
 				6264187826205B5200D337C6 /* EXTRoadMap */,
@@ -310,6 +325,7 @@
 		A68BA16D261A93E500ACC4C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				620905FA2620D9150002A549 /* Story.swift */,
 				A68BA16E261A93EE00ACC4C7 /* Job.swift */,
 				A6BF1261261A9C49006F0AB3 /* Result.swift */,
 				A6BF1264261A9CB3006F0AB3 /* JobResult.swift */,
@@ -320,6 +336,7 @@
 		A68BA179261A960400ACC4C7 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				620905FD2620D94A0002A549 /* story.json */,
 				A68BA17A261A971D00ACC4C7 /* job.json */,
 			);
 			path = Mock;
@@ -424,6 +441,7 @@
 				A607D8A7261A631E00FCFE50 /* LaunchScreen.storyboard in Resources */,
 				A6B0E81A261B6C0C000C5767 /* Lato-SemiboldItalic.ttf in Resources */,
 				A6B0E81B261B6C0C000C5767 /* Lato-Black.ttf in Resources */,
+				620905FE2620D94A0002A549 /* story.json in Resources */,
 				A6B0E823261B6C0C000C5767 /* Lato-Hairline.ttf in Resources */,
 				A6B0E824261B6C0C000C5767 /* Lato-Bold.ttf in Resources */,
 				626418A12620689000D337C6 /* RoadMap.storyboard in Resources */,
@@ -506,6 +524,7 @@
 				6264189D262067BF00D337C6 /* RoadMap.swift in Sources */,
 				A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */,
 				A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */,
+				620906022620D9E20002A549 /* BusinessManager.swift in Sources */,
 				A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */,
 				A6705B1F261A695A00DFE6DC /* LoginViewController.swift in Sources */,
 				626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */,
@@ -516,6 +535,7 @@
 				A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */,
 				6264188326205CAF00D337C6 /* TimeLineCellModel.swift in Sources */,
 				A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */,
+				620905FB2620D9150002A549 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

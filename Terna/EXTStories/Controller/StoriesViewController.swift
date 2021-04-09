@@ -10,6 +10,7 @@ import UIKit
 class StoriesViewController: UIViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView?
+    private var stories :[Story]?
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: "StoriesViewController", bundle: nil)
     }
@@ -24,20 +25,25 @@ class StoriesViewController: UIViewController {
 
     }
     
+    public func loadWithStories(stories: [Story]) {
+        self.stories = stories
+        self.collectionView?.reloadData()
+    }
+    
 }
 
 extension StoriesViewController: UICollectionViewDelegate, UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return stories?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath)
-        cell.backgroundColor = .yellow
-        
-        return cell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as? StoriesCollectionViewCell, let story = self.stories?[indexPath.row]{
+            cell.setup(story: story)
+            return cell
+        }
+        return UICollectionViewCell()
     }
     
     

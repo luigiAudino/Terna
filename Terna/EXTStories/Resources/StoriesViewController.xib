@@ -29,7 +29,7 @@
                     <rect key="frame" x="0.0" y="34" width="414" height="66"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DgY-D1-KUm">
-                        <size key="itemSize" width="128" height="128"/>
+                        <size key="itemSize" width="80" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -40,7 +40,7 @@
                     </connections>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡FLASH NEWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmf-ie-SI6">
-                    <rect key="frame" x="20" y="5" width="129" height="29"/>
+                    <rect key="frame" x="20" y="5" width="130" height="29"/>
                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                     <color key="textColor" name="AccentColor"/>
                     <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                 <constraint firstAttribute="bottom" secondItem="rOW-My-EFk" secondAttribute="bottom" id="qo2-IE-0EI"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="101.25" y="108.80281690140845"/>
+            <point key="canvasLocation" x="24" y="109"/>
         </view>
     </objects>
     <resources>

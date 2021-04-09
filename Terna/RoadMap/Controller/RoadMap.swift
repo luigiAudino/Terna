@@ -13,7 +13,7 @@ class RoadMap: UIViewController
     
     @IBOutlet private weak var stepsView: TimeLineView?
     @IBOutlet weak var storiesContainerView: UIView!
-    
+    let businessanager = BusinessManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +35,14 @@ class RoadMap: UIViewController
     private func addStories() {
         let storiesViewsController = StoriesViewController()
         self.storiesContainerView.addSubview(storiesViewsController.view)
+        self.addChild(storiesViewsController)
         storiesViewsController.didMove(toParent: self)
         storiesViewsController.view.frame = CGRect(x:0, y: 0, width: storiesContainerView.frame.width, height: storiesContainerView.frame.height)
+        BusinessManager.readStoryMock { (stories) in
+            storiesViewsController.loadWithStories(stories: stories)
+        }
+        
+        
     }
     
     private func mockSteps() -> [TimeLineStep] {

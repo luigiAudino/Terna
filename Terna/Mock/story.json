@@ -1,7 +1,44 @@
 {
-  "id" : "1",
-  "icon" : "",
-  "color" : "",
-  "image" : "",
-  "description" : ""
+  "result":{
+     "code":0,
+     "description":"OK",
+     "success":true
+  },
+  "stories":[{
+      "id" : 1,
+      "icon" : "peopleStoryIcon",
+      "colorHex" : "#2D5FB8",
+      "image" : "assa",
+      "description" : "asaa",
+      "readed" : true
+  },{
+      "id" : 2,
+      "icon" : "newsStoryIcon",
+      "colorHex" : "#FF7556",
+      "image" : "newsStoryIcon",
+      "description" : "asas",
+      "readed" : true
+  },{
+      "id" : 3,
+      "icon" : "maniIcon",
+      "colorHex" : "#FFE152",
+      "image" : "maniIcon",
+      "description" : "saas",
+      "readed" : true
+  },{
+      "id" : 4,
+      "icon" : "trophyIcon",
+      "colorHex" : "#97C239",
+      "image" : "trophyIcon",
+      "description" : "assa",
+      "readed" : false
+  },{
+      "id" : 4,
+      "icon" : "maniIcon",
+      "colorHex" : "#97C239",
+      "image" : "maniIcon",
+      "description" : "sasa",
+      "readed" : false
+  }]
+  
 }
