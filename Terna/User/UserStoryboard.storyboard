@@ -87,6 +87,10 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="dotHeight" destination="Oo9-Ql-YQp" id="laE-AB-ukl"/>
+                                                    <outlet property="dotTopSpace" destination="a6j-dE-XPJ" id="3IM-yU-bFk"/>
+                                                    <outlet property="dotWidth" destination="AEY-lB-yTW" id="8aA-rY-IRE"/>
+                                                    <outlet property="dotWidthSpace" destination="qLJ-eM-LYd" id="aQN-1y-bYF"/>
                                                     <outlet property="leftDescriptionLabel" destination="kSd-l4-YaM" id="a75-Na-OYb"/>
                                                     <outlet property="leftStackView" destination="PR7-Yp-VL4" id="NuS-H8-KEV"/>
                                                     <outlet property="leftTitleLabel" destination="6mR-Bv-Sjb" id="0Tb-j1-cMD"/>

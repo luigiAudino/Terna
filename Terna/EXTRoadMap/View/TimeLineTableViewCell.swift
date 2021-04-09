@@ -21,13 +21,17 @@ class TimeLineTableViewCell: UITableViewCell {
     @IBOutlet weak var rightDescriptionLabel: UILabel!
     @IBOutlet weak var leftTitleLabel: UILabel!
     @IBOutlet weak var leftDescriptionLabel: UILabel!
+    @IBOutlet weak var dotWidth: NSLayoutConstraint!
+    @IBOutlet weak var dotHeight: NSLayoutConstraint!
+    @IBOutlet weak var dotTopSpace: NSLayoutConstraint!
+    @IBOutlet weak var dotWidthSpace: NSLayoutConstraint!
     
     public func setup(delegate: TimeLineCellDelegate, model: TimeLineCellModel, step: TimeLineStep) {
         self.setupTextForPosition(model: model, step: step)
 
         self.stepView?.setup(color: step.color, percentage: step.completedPercentage)
         if(model.shouldLoad) {
-            self.animate()
+            self.animate(step: step)
             
             self.delegate = delegate
         }
@@ -49,23 +53,54 @@ class TimeLineTableViewCell: UITableViewCell {
             self.leftDescriptionLabel.text = step.stepDescription
             self.leftTitleLabel.textColor = step.color
         }
+        self.stepView?.layer.cornerRadius = 20
+
+
     }
     
-    func animate() {
+    func animate(step: TimeLineStep) {
         self.layoutIfNeeded()
         let _ = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { timer in
+            if step.isStepActive {
+                self.layoutIfNeeded()
+                self.stepView?.layoutIfNeeded()
+                UIView.animate(withDuration: 1.0, delay: 0.0) {
+
+                    self.dotWidth.constant += 20
+                    self.dotHeight.constant += 20
+
+                    self.dotTopSpace.constant -= 20
+                    self.dotWidthSpace.constant -= 20
+                    self.stepView?.layer.cornerRadius = self.dotWidth.constant / 2
+
+                    self.stepView?.layoutIfNeeded()
+                    self.layoutIfNeeded()
+                }
+                
+            }
             self.stepView?.animate()
             let cview = UIView(frame: CGRect(x: self.frame.size.width / 2 - 2 , y: 0, width: 4, height: 0))
-            let color = UIColor(hexString: "#2D5FB8")
+            var color = UIColor(hexString: "#2D5FB8")
+            
+            if !step.isStepActive && !step.completed {
+                color = UIColor(hexString: "#B9B9B9")
+            }
+            
             cview.backgroundColor = color
             self.insertSubview(cview, at: 1)
             cview.layoutIfNeeded()
             self.layoutIfNeeded()
+            
+
+            
             UIView.animate(withDuration: 1, delay: 0.5) {
                 cview.frame.size.height = self.frame.height
                 cview.layoutIfNeeded()
                 self.layoutIfNeeded()
             }
+            
+
+            
             let _ = Timer.scheduledTimer(withTimeInterval: 0.7, repeats: false) { timer in
                 self.delegate?.animationDidFinish()
             }

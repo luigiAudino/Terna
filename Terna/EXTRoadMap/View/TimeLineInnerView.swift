@@ -15,7 +15,6 @@ class TimeLineInnerView: UIView
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.layer.cornerRadius = 20
         
     }
     
@@ -23,7 +22,7 @@ class TimeLineInnerView: UIView
         self.backgroundColor = UIColor.white
         self.layer.borderWidth = 5
         self.layer.borderColor = color.cgColor
-        self.colouredView = UIView(frame: CGRect(x: 0 , y: 0, width: self.frame.width, height: 0))
+        self.colouredView = UIView(frame: CGRect(x: 0 , y: 0, width: 90, height: 0))
         self.stepPercetage = percentage
         self.colouredView?.backgroundColor = color
         self.addSubview(colouredView!)
