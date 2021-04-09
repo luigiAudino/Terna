@@ -32,16 +32,7 @@ class TimeLineTableViewCell: UITableViewCell {
             self.delegate = delegate
         }
     }
-    
-    override func prepareForReuse()
-    {
-        super.prepareForReuse()
-        // Reset the cell for new row's data
-//        self.leftStackView.isHidden = true
-//        self.rightStackView.isHidden = true
-//        self.stepView?.reset()
 
-    }
     
     private func setupTextForPosition(model: TimeLineCellModel, step: TimeLineStep)
     {
