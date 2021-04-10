@@ -1,0 +1,130 @@
+Pods/Manifest.lock
+Pods/MaterialComponents/LICENSE
+Pods/MaterialComponents/README.md
+Pods/MaterialComponents/components/AnimationTiming/src/CAMediaTimingFunction+MDCAnimationTiming.h
+Pods/MaterialComponents/components/AnimationTiming/src/CAMediaTimingFunction+MDCAnimationTiming.m
+Pods/MaterialComponents/components/AnimationTiming/src/MaterialAnimationTiming.h
+Pods/MaterialComponents/components/AnimationTiming/src/UIView+MDCTimingFunction.h
+Pods/MaterialComponents/components/AnimationTiming/src/UIView+MDCTimingFunction.m
+Pods/MaterialComponents/components/Availability/src/MaterialAvailability.h
+Pods/MaterialComponents/components/Availability/src/MDCAvailability.h
+Pods/MaterialComponents/components/private/Math/src/MaterialMath.h
+Pods/MaterialComponents/components/private/Math/src/MaterialMathDummy.m
+Pods/MaterialComponents/components/private/Math/src/MDCMath.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/BaseStyle/MaterialTextControlsPrivate+BaseStyle.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlStyleBase.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlStyleBase.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlVerticalPositioningReferenceBase.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlVerticalPositioningReferenceBase.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/FilledStyle/MaterialTextControlsPrivate+FilledStyle.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlStyleFilled.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlStyleFilled.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlVerticalPositioningReferenceFilled.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlVerticalPositioningReferenceFilled.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MaterialTextControlsPrivate+Shared.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControl.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControl.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelDrawPriority.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelView.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelView.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelViewLayout.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelViewLayout.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlColorViewModel.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlColorViewModel.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlGradientManager.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlGradientManager.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioning.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioningReference.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioningReference.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelAnimation.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelAnimation.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelPosition.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelPosition.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlPlaceholderSupport.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlPlaceholderSupport.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlSideViewSupport.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlSideViewSupport.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlVerticalPositioningReference.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/MDCTextControlVerticalPositioningReference.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/UIBezierPath+MDCTextControlStyle.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/Shared/UIBezierPath+MDCTextControlStyle.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/TextFields/MaterialTextControlsPrivate+TextFields.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/TextFields/MDCTextControlTextField.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/TextFields/MDCTextControlTextFieldSideViewAlignment.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/UnderlinedStyle/MaterialTextControlsPrivate+UnderlinedStyle.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlStyleUnderlined.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlStyleUnderlined.m
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlVerticalPositioningReferenceUnderlined.h
+Pods/MaterialComponents/components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlVerticalPositioningReferenceUnderlined.m
+Pods/MaterialComponents/components/TextControls/src/BaseTextAreas/MaterialTextControls+BaseTextAreas.h
+Pods/MaterialComponents/components/TextControls/src/BaseTextAreas/MDCBaseTextArea.h
+Pods/MaterialComponents/components/TextControls/src/BaseTextAreas/MDCBaseTextArea.m
+Pods/MaterialComponents/components/TextControls/src/BaseTextAreas/MDCBaseTextAreaDelegate.h
+Pods/MaterialComponents/components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaLayout.h
+Pods/MaterialComponents/components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaLayout.m
+Pods/MaterialComponents/components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaTextView.h
+Pods/MaterialComponents/components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaTextView.m
+Pods/MaterialComponents/components/TextControls/src/BaseTextFields/MaterialTextControls+BaseTextFields.h
+Pods/MaterialComponents/components/TextControls/src/BaseTextFields/MDCBaseTextField.h
+Pods/MaterialComponents/components/TextControls/src/BaseTextFields/MDCBaseTextField.m
+Pods/MaterialComponents/components/TextControls/src/BaseTextFields/MDCBaseTextFieldDelegate.h
+Pods/MaterialComponents/components/TextControls/src/Enums/MaterialTextControls+Enums.h
+Pods/MaterialComponents/components/TextControls/src/Enums/MDCTextControlLabelBehavior.h
+Pods/MaterialComponents/components/TextControls/src/Enums/MDCTextControlState.h
+Pods/MaterialComponents/components/TextControls/src/Enums/MDCTextControlState.m
+Pods/MaterialComponents/components/TextControls/src/FilledTextAreas/MaterialTextControls+FilledTextAreas.h
+Pods/MaterialComponents/components/TextControls/src/FilledTextAreas/MDCFilledTextArea.h
+Pods/MaterialComponents/components/TextControls/src/FilledTextAreas/MDCFilledTextArea.m
+Pods/MaterialComponents/components/TextControls/src/FilledTextFields/MaterialTextControls+FilledTextFields.h
+Pods/MaterialComponents/components/TextControls/src/FilledTextFields/MDCFilledTextField.h
+Pods/MaterialComponents/components/TextControls/src/FilledTextFields/MDCFilledTextField.m
+Pods/MDFInternationalization/LICENSE
+Pods/MDFInternationalization/README.md
+Pods/MDFInternationalization/Sources/MDFInternationalization.h
+Pods/MDFInternationalization/Sources/MDFRTL.h
+Pods/MDFInternationalization/Sources/MDFRTL.m
+Pods/MDFInternationalization/Sources/NSLocale+MaterialRTL.h
+Pods/MDFInternationalization/Sources/NSLocale+MaterialRTL.m
+Pods/MDFInternationalization/Sources/NSString+MaterialBidi.h
+Pods/MDFInternationalization/Sources/NSString+MaterialBidi.m
+Pods/MDFInternationalization/Sources/UIImage+MaterialRTL.h
+Pods/MDFInternationalization/Sources/UIImage+MaterialRTL.m
+Pods/MDFInternationalization/Sources/UIView+MaterialRTL.h
+Pods/MDFInternationalization/Sources/UIView+MaterialRTL.m
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Pods.xcodeproj/xcuserdata/pierojuniorgaetani.xcuserdatad/xcschemes/MaterialComponents.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/pierojuniorgaetani.xcuserdatad/xcschemes/MDFInternationalization.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/pierojuniorgaetani.xcuserdatad/xcschemes/Pods-Terna.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/pierojuniorgaetani.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/Target Support Files/MaterialComponents/MaterialComponents-dummy.m
+Pods/Target Support Files/MaterialComponents/MaterialComponents-Info.plist
+Pods/Target Support Files/MaterialComponents/MaterialComponents-prefix.pch
+Pods/Target Support Files/MaterialComponents/MaterialComponents-umbrella.h
+Pods/Target Support Files/MaterialComponents/MaterialComponents.debug.xcconfig
+Pods/Target Support Files/MaterialComponents/MaterialComponents.modulemap
+Pods/Target Support Files/MaterialComponents/MaterialComponents.release.xcconfig
+Pods/Target Support Files/MDFInternationalization/MDFInternationalization-dummy.m
+Pods/Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist
+Pods/Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch
+Pods/Target Support Files/MDFInternationalization/MDFInternationalization-umbrella.h
+Pods/Target Support Files/MDFInternationalization/MDFInternationalization.debug.xcconfig
+Pods/Target Support Files/MDFInternationalization/MDFInternationalization.modulemap
+Pods/Target Support Files/MDFInternationalization/MDFInternationalization.release.xcconfig
+Pods/Target Support Files/Pods-Terna/Pods-Terna-acknowledgements.markdown
+Pods/Target Support Files/Pods-Terna/Pods-Terna-acknowledgements.plist
+Pods/Target Support Files/Pods-Terna/Pods-Terna-dummy.m
+Pods/Target Support Files/Pods-Terna/Pods-Terna-frameworks-Debug-input-files.xcfilelist
+Pods/Target Support Files/Pods-Terna/Pods-Terna-frameworks-Debug-output-files.xcfilelist
+Pods/Target Support Files/Pods-Terna/Pods-Terna-frameworks-Release-input-files.xcfilelist
+Pods/Target Support Files/Pods-Terna/Pods-Terna-frameworks-Release-output-files.xcfilelist
+Pods/Target Support Files/Pods-Terna/Pods-Terna-frameworks.sh
+Pods/Target Support Files/Pods-Terna/Pods-Terna-Info.plist
+Pods/Target Support Files/Pods-Terna/Pods-Terna-umbrella.h
+Pods/Target Support Files/Pods-Terna/Pods-Terna.debug.xcconfig
+Pods/Target Support Files/Pods-Terna/Pods-Terna.modulemap
+Pods/Target Support Files/Pods-Terna/Pods-Terna.release.xcconfig
+Terna.xcodeproj/project.xcworkspace/xcuserdata/pierojuniorgaetani.xcuserdatad/UserInterfaceState.xcuserstate
+Terna.xcodeproj/xcuserdata/pierojuniorgaetani.xcuserdatad/xcschemes/xcschememanagement.plist
+Terna.xcworkspace/xcuserdata/pierojuniorgaetani.xcuserdatad/UserInterfaceState.xcuserstate
