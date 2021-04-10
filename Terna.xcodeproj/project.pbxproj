@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3AC18CE542BB60BB947170B3 /* Pods_Terna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */; };
+		47CCB8B82621C4DB00B8CA99 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CCB8B52621C4DA00B8CA99 /* VideoCell.swift */; };
+		47CCB8B92621C4DB00B8CA99 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CCB8B62621C4DA00B8CA99 /* Video.swift */; };
+		47CCB8BA2621C4DB00B8CA99 /* VideoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CCB8B72621C4DA00B8CA99 /* VideoListScreen.swift */; };
 		620906022620D9E20002A549 /* BusinessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620906012620D9E20002A549 /* BusinessManager.swift */; };
 		6209060A262114E70002A549 /* AnimatedCircledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62090609262114E70002A549 /* AnimatedCircledView.m */; };
 		6264187B26205C3D00D337C6 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264187A26205C3D00D337C6 /* TimeLineView.swift */; };
@@ -70,6 +73,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47CCB8B52621C4DA00B8CA99 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		47CCB8B62621C4DA00B8CA99 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		47CCB8B72621C4DA00B8CA99 /* VideoListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListScreen.swift; sourceTree = "<group>"; };
 		60BEC0086387A1DE4AE74530 /* Pods-Terna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.release.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.release.xcconfig"; sourceTree = "<group>"; };
 		620905FA2620D9150002A549 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		620906012620D9E20002A549 /* BusinessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessManager.swift; sourceTree = "<group>"; };
@@ -303,6 +309,9 @@
 		A607D899261A631D00FCFE50 /* Terna */ = {
 			isa = PBXGroup;
 			children = (
+				47CCB8B62621C4DA00B8CA99 /* Video.swift */,
+				47CCB8B52621C4DA00B8CA99 /* VideoCell.swift */,
+				47CCB8B72621C4DA00B8CA99 /* VideoListScreen.swift */,
 				62F8D26E2621C76C00793FF3 /* ChatbotViewController.swift */,
 				620906002620D9D50002A549 /* Business */,
 				626418A42620B7EA00D337C6 /* EXTStories */,
@@ -553,8 +562,10 @@
 			files = (
 				626418AA2620B82A00D337C6 /* StoriesViewController.swift in Sources */,
 				6264188926205E6B00D337C6 /* TimeLineTableViewCell.swift in Sources */,
+				47CCB8B82621C4DB00B8CA99 /* VideoCell.swift in Sources */,
 				6264188626205DBA00D337C6 /* TimeLineInnerView.swift in Sources */,
 				A6BF1262261A9C49006F0AB3 /* Result.swift in Sources */,
+				47CCB8B92621C4DB00B8CA99 /* Video.swift in Sources */,
 				A68BA16F261A93EE00ACC4C7 /* Job.swift in Sources */,
 				A6B0E802261B68F7000C5767 /* Color.swift in Sources */,
 				62F8D26A2621BFCF00793FF3 /* CompletedStepsModalVC.swift in Sources */,
@@ -566,6 +577,7 @@
 				A6D3E5512620ED7200618710 /* StoryDetailCollectionViewCell.swift in Sources */,
 				620906022620D9E20002A549 /* BusinessManager.swift in Sources */,
 				A6BF1265261A9CB3006F0AB3 /* JobResult.swift in Sources */,
+				47CCB8BA2621C4DB00B8CA99 /* VideoListScreen.swift in Sources */,
 				A6D3E5472620E9A200618710 /* StoryDetailViewController.swift in Sources */,
 				A6705B1F261A695A00DFE6DC /* LoginViewController.swift in Sources */,
 				626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */,
