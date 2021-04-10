@@ -61,13 +61,14 @@ extension StoryDetailViewController: UICollectionViewDelegate, UICollectionViewD
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoryDetailCell", for: indexPath) as! StoryDetailCollectionViewCell
         let story = stories[indexPath.row]
         story.shouldLoad = index == indexPath.row
-        cell.containerView.backgroundColor = .green
         cell.setup(delegate: self, story: story, nextIndex: indexPath.row)
                 
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let guide = view.safeAreaLayoutGuide
+        let height = guide.layoutFrame.size.height
         return CGSize(width: self.view.frame.width, height: self.view.frame.height)
     }
 }
@@ -75,12 +76,23 @@ extension StoryDetailViewController: UICollectionViewDelegate, UICollectionViewD
 extension StoryDetailViewController: StoryDetailProtocol {
     func storyCompleted(index: Int) {
         let indexPath = IndexPath(row: index + 1, section: 0)
-        self.collectionView?.isPagingEnabled = false
-        self.collectionView.scrollToItem(at: indexPath, at: .right,animated: false)
+        let indexPathNext = IndexPath(row: index + 1, section: 0)
         
-        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { timer in
-            self.collectionView?.isPagingEnabled = true
+        if(index < stories.count - 1) {
+            stories[index + 1].shouldLoad = true
+            self.index?+=1
+            collectionView.reloadItems(at: [indexPath, indexPathNext])
+            collectionView.isPagingEnabled = false
+            collectionView.scrollToItem(at: indexPath, at: .right,animated: false)
+            
+            Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { timer in
+                self.collectionView?.isPagingEnabled = true
+            }
         }
+        else {
+            closeAction()
+        }
+        
     }
     
     func closeAction() {

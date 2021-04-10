@@ -13,6 +13,10 @@ protocol StoryDetailProtocol {
 }
 
 class StoryDetailCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var progressView: UIView!
+    @IBOutlet weak var progressBarWidth: NSLayoutConstraint!
+    
+    
     private var delegate: StoryDetailProtocol?
     private var nextIndex: Int?
     
@@ -38,20 +42,26 @@ class StoryDetailCollectionViewCell: UICollectionViewCell {
     }
 
     private func startProgressStory() {
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
-            if let next = self.nextIndex {
-                print("Sono nel completition")
-                self.delegate?.storyCompleted(index: next)
-            }
-        }
-        
-//        UIView.animate(withDuration: 3, delay: 5) {
-//            print("Ciao")
-//        } completion: { _ in
+//        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
 //            if let next = self.nextIndex {
-//                print("Sono nel completition")
 //                self.delegate?.storyCompleted(index: next)
 //            }
 //        }
+        self.layoutIfNeeded()
+
+        UIView.animate(withDuration: 3) {
+            self.layoutSubviews()
+            self.layoutIfNeeded()
+            self.progressView.layoutIfNeeded()
+            self.progressBarWidth.constant = self.frame.size.width
+
+//            self.progressView.frame.size.width = self.frame.size.width
+            self.layoutIfNeeded()
+//            self.progressBarWidth.constant = self.frame.size.width
+        } completion: { _ in
+            if let next = self.nextIndex {
+                self.delegate?.storyCompleted(index: next)
+            }
+        }
     }
 }

@@ -318,7 +318,7 @@
         <!--Video-->
         <scene sceneID="SFm-ru-fB1">
             <objects>
-                <viewController id="QVo-u7-5x6" customClass="VideoListScreen" customModule="YoutubeVideoTerna" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QVo-u7-5x6" customClass="VideoListScreen" customModule="Terna" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vWj-zZ-IfC"/>
                         <viewControllerLayoutGuide type="bottom" id="DFR-Xz-gm9"/>
@@ -331,7 +331,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="108" id="z7f-8g-3OB" customClass="VideoCell" customModule="YoutubeVideoTerna" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="108" id="z7f-8g-3OB" customClass="VideoCell" customModule="Terna" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z7f-8g-3OB" id="qDp-KO-zRl">

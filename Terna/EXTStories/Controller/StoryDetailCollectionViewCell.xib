@@ -7,42 +7,61 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryDetailCell" id="gTV-IL-0wX" customClass="StoryDetailCollectionViewCell" customModule="Terna" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="367" height="201"/>
+            <rect key="frame" x="0.0" y="0.0" width="450" height="559"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="367" height="201"/>
+                <rect key="frame" x="0.0" y="0.0" width="450" height="559"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-QS-sQX">
-                        <rect key="frame" x="0.0" y="0.0" width="367" height="201"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="559"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-tV-PbP">
-                                <rect key="frame" x="162.66666666666666" y="90" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-tV-PbP">
+                                <rect key="frame" x="30" y="269.33333333333331" width="390" height="20.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Yw-rM5">
-                                <rect key="frame" x="313" y="50" width="44" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Yw-rM5">
+                                <rect key="frame" x="396" y="50" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="21B-Yw-rM5" secondAttribute="height" multiplier="1:1" id="K0c-do-dKq"/>
                                     <constraint firstAttribute="height" constant="44" id="jBL-4P-EFr"/>
                                 </constraints>
-                                <state key="normal" title="X"/>
+                                <state key="normal" image="close"/>
                                 <connections>
                                     <action selector="closeBtnPress:" destination="gTV-IL-0wX" eventType="touchUpInside" id="6MB-b9-8Bd"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teb-mc-0Pv">
+                                <rect key="frame" x="0.0" y="50" width="0.0" height="5"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="bop-J9-JFB"/>
+                                    <constraint firstAttribute="height" constant="5" id="ywK-mX-Flb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="teb-mc-0Pv" firstAttribute="leading" secondItem="DgH-QS-sQX" secondAttribute="leading" id="5QQ-eN-HNY"/>
                             <constraint firstAttribute="trailing" secondItem="21B-Yw-rM5" secondAttribute="trailing" constant="10" id="HHZ-Ir-lqS"/>
                             <constraint firstItem="21B-Yw-rM5" firstAttribute="top" secondItem="DgH-QS-sQX" secondAttribute="top" constant="50" id="JuR-Rw-XX6"/>
                             <constraint firstItem="dqf-tV-PbP" firstAttribute="centerX" secondItem="DgH-QS-sQX" secondAttribute="centerX" id="OBT-LG-Gij"/>
+                            <constraint firstItem="dqf-tV-PbP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="21B-Yw-rM5" secondAttribute="bottom" constant="30" id="S8U-yD-7gE"/>
+                            <constraint firstAttribute="trailing" secondItem="dqf-tV-PbP" secondAttribute="trailing" constant="30" id="TLF-ZF-SNj"/>
+                            <constraint firstItem="teb-mc-0Pv" firstAttribute="top" secondItem="DgH-QS-sQX" secondAttribute="top" constant="50" id="Veu-pX-lxy"/>
+                            <constraint firstItem="dqf-tV-PbP" firstAttribute="leading" secondItem="DgH-QS-sQX" secondAttribute="leading" constant="30" id="blt-co-vbR"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dqf-tV-PbP" secondAttribute="bottom" constant="30" id="sNE-9B-hkX"/>
                             <constraint firstItem="dqf-tV-PbP" firstAttribute="centerY" secondItem="DgH-QS-sQX" secondAttribute="centerY" id="tb7-jH-d9g"/>
                         </constraints>
                     </view>
@@ -55,18 +74,24 @@
                 <constraint firstAttribute="trailing" secondItem="DgH-QS-sQX" secondAttribute="trailing" id="Otq-fG-KuS"/>
                 <constraint firstAttribute="bottom" secondItem="DgH-QS-sQX" secondAttribute="bottom" id="a81-Et-15T"/>
             </constraints>
-            <size key="customSize" width="367" height="201"/>
+            <size key="customSize" width="450" height="559"/>
             <connections>
                 <outlet property="closeBtn" destination="21B-Yw-rM5" id="2jL-t5-5bz"/>
                 <outlet property="containerView" destination="DgH-QS-sQX" id="67f-R5-t5x"/>
                 <outlet property="lbl" destination="dqf-tV-PbP" id="eFK-rK-8Gw"/>
+                <outlet property="progressBarWidth" destination="bop-J9-JFB" id="j7S-Tt-oVY"/>
+                <outlet property="progressView" destination="teb-mc-0Pv" id="o8N-vA-AiY"/>
             </connections>
-            <point key="canvasLocation" x="335.50724637681162" y="39.174107142857139"/>
+            <point key="canvasLocation" x="401.60000000000002" y="171.05911330049261"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="close" width="24" height="24.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
