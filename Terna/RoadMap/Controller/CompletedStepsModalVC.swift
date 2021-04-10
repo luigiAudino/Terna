@@ -13,7 +13,7 @@ class CompletedStepsModalVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.sheetView?.layer.cornerRadius = 30
         // Do any additional setup after loading the view.
     }
 

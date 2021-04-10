@@ -25,16 +25,30 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="595"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="completedCell" rowHeight="160" id="HGp-6R-c2c" customClass="TimeLineLastCell" customModule="Terna" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="160"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="completedCell" rowHeight="5" id="HGp-6R-c2c" customClass="TimeLineLastCell" customModule="Terna" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HGp-6R-c2c" id="NqO-Nu-oqL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Thf-gs-lmO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="3"/>
+                                                            <color key="backgroundColor" red="0.2115772665" green="0.31768581270000001" blue="0.74136072399999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="3" id="6h9-aT-oPj"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Thf-gs-lmO" firstAttribute="top" secondItem="NqO-Nu-oqL" secondAttribute="topMargin" constant="-11" id="8VR-up-0gA"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="Thf-gs-lmO" secondAttribute="trailing" constant="-20" id="H8T-aN-DBS"/>
+                                                        <constraint firstItem="Thf-gs-lmO" firstAttribute="leading" secondItem="NqO-Nu-oqL" secondAttribute="leadingMargin" constant="-20" id="Smd-sd-Hyg"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="timeLineCell" rowHeight="132" id="dYM-gp-3OE" customClass="TimeLineTableViewCell" customModule="Terna" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188" width="414" height="132"/>
+                                                <rect key="frame" x="0.0" y="33" width="414" height="132"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dYM-gp-3OE" id="8xw-Xs-omo">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>

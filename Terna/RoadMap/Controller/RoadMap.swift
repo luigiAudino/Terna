@@ -19,7 +19,7 @@ class RoadMap: UIViewController
     @IBOutlet weak var leftStoryAnimatedViewWidth: NSLayoutConstraint!
     private var progressViewOne: UIView?
     private var progressViewTwo: UIView?
-
+    private var didShowSuccessTutorial = false
     override func viewDidLoad() {
         super.viewDidLoad()
         let logo = UIImage(named: "Logo_Terna_clear")
@@ -78,7 +78,7 @@ class RoadMap: UIViewController
         
         var stepsArray: [TimeLineStep] = []
         
-        let stepsArrayDic: [Dictionary<String, Any>] = [["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Uno", "stepDescription":"Descrizione bella uno", "color":UIColor(hexString: "FFAA2A", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Due", "stepDescription":"Descrizione bella due", "color":UIColor(hexString: "FF7556", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Tre", "stepDescription":"Descrizione bella tre", "color":UIColor(hexString: "C77878", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Quattro", "stepDescription":"Descrizione bella quattro", "color":UIColor(hexString: "00A8DE", alpha: 1.0),"isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Cinque", "stepDescription":"Descrizione bella cinque", "color":UIColor(hexString: "00AFBB", alpha: 1.0),"isStepActive": false]]
+        let stepsArrayDic: [Dictionary<String, Any>] = [["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Uno", "stepDescription":"Descrizione bella uno", "color":UIColor(hexString: "FFAA2A", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Due", "stepDescription":"Descrizione bella due", "color":UIColor(hexString: "FF7556", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Tre", "stepDescription":"Descrizione bella tre", "color":UIColor(hexString: "C77878", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Titolo Quattro", "stepDescription":"Descrizione bella quattro", "color":UIColor(hexString: "00A8DE", alpha: 1.0),"isStepActive": false]]
         
         stepsArrayDic.forEach { (stepDic) in
             
@@ -98,9 +98,13 @@ class RoadMap: UIViewController
 
 extension RoadMap: TimeLineDelegate {
     func presentCompletedScreen() {
-        let completedVC = CompletedStepsModalVC(nibName: "CompletedStepsModalVC", bundle: nil)
-        completedVC.modalPresentationStyle = .overFullScreen
-        self.present(completedVC, animated: true, completion: nil)
+        if(self.didShowSuccessTutorial == false && self.isViewLoaded && (self.view.window != nil)) {
+            let completedVC = CompletedStepsModalVC(nibName: "CompletedStepsModalVC", bundle: nil)
+            completedVC.modalPresentationStyle = .overFullScreen
+            self.present(completedVC, animated: true, completion: nil)
+            self.didShowSuccessTutorial = true
+        }
+
     }
     
     func listOfSteps() -> [TimeLineStep] {
