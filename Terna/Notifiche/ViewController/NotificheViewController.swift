@@ -23,7 +23,6 @@ class NotificheViewController: UIViewController
             self.tableView?.reloadData()
         }
     }
-    
 }
 
 extension NotificheViewController: UITableViewDelegate, UITableViewDataSource {
