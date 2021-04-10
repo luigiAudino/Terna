@@ -54,4 +54,18 @@ class BusinessManager {
         }
     }
     
+    static func readUsersMock(completion: ([User]) -> ()) {
+        if let path = Bundle.main.path(forResource: "user", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                
+                if let users = UserResult.decode(data: data)?.users {
+                    completion(users)
+                }
+                
+            } catch let e {
+                print(e)
+            }
+        }
+    }
 }
