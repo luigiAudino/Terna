@@ -18,6 +18,8 @@ class NotificheViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.backgroundColor = Color.firstBlue
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black, NSAttributedString.Key.font : UIFont(name: "Lato-Bold", size: 20)!]
+        self.title = "Notifiche"
         BusinessManager.readNotificheMock { (notifications) in
             self.listOfNotifications = notifications
             self.tableView?.reloadData()
