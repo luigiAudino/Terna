@@ -39,14 +39,16 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginBtnPress(_ sender: Any) {
 
-        self.performSegue(withIdentifier: "GoToHome", sender: nil)
+//        self.performSegue(withIdentifier: "GoToHome", sender: nil)
         
-        if(false && !isEmptyUser()) {
+//        if(false && !isEmptyUser()) {
+        if(!isEmptyUser()) {
             if(checkUser()) {
                 print("OK")
                 setStyle(textField: emailTxtFld)
                 setStyle(textField: passwordTxtFld)
                 
+                Singleton.shared.setUser(user: User(email: emailTxtFld.text!, password: passwordTxtFld.text!))
                 self.performSegue(withIdentifier: "GoToHome", sender: nil)
 
             }
