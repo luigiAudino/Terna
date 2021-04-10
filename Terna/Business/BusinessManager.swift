@@ -24,6 +24,23 @@ class BusinessManager {
         }
     }
     
+    
+    static func readStepMock(completion: ([Step]) -> ()) {
+        if let path = Bundle.main.path(forResource: "Roadmap-Luigi", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                
+                if let stepsList = Steps.decode(data: data)?.steps{
+                    completion(stepsList)
+                }
+                
+            } catch let e {
+                print(e)
+            }
+        }
+    }
+    
+    
     static func readNotificheMock(completion: ([Notification]) -> ()) {
         if let path = Bundle.main.path(forResource: "notifiche", ofType: "json") {
             do {

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol TimeLineDelegate: UITableViewDelegate {
-    func listOfSteps() -> [TimeLineStep]
+    func listOfSteps() -> [Step]
     func presentCompletedScreen()
 }
 
@@ -20,7 +20,7 @@ class TimeLineView: UIView
     @IBOutlet private var tableView: UITableView?
     private var cellToLoad = 0
     private var models: [TimeLineCellModel] = []
-    private var steps: [TimeLineStep] = []
+    private var steps: [Step] = []
     public weak var delegate: TimeLineDelegate?
     
     override func awakeFromNib() {

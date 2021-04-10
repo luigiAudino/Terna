@@ -6,14 +6,4 @@
 //
 
 import Foundation
-import UIKit
-struct TimeLineStep {
-    
-    var completed: Bool
-    var completedPercentage: Double
-    var stepTitle: String
-    var stepDescription: String
-    var color: UIColor
-    var isStepActive: Bool
-    
-}
+

@@ -20,6 +20,8 @@ class RoadMap: UIViewController
     private var progressViewOne: UIView?
     private var progressViewTwo: UIView?
     private var didShowSuccessTutorial = false
+    private var stepArray: [Step] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let logo = UIImage(named: "Logo_Terna_clear")
@@ -27,6 +29,9 @@ class RoadMap: UIViewController
         imageView.contentMode = .scaleAspectFit
         navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor = Color.firstBlue
+        BusinessManager.readStepMock { (steps) in
+            self.stepArray = steps
+        }
 //        self.addProgressViewOnBottomStories()
         self.addStories()
         self.stepsView?.delegate = self
@@ -64,6 +69,7 @@ class RoadMap: UIViewController
     }
     
     private func addProgressViewOnBottomStories() {
+
         self.progressViewOne = UIView(frame: self.leftStoryAnimatedView.frame)
         self.progressViewOne?.frame.size.width = 0
         self.progressViewOne?.backgroundColor = Color.firstBlue
@@ -73,32 +79,19 @@ class RoadMap: UIViewController
         self.leftStoryAnimatedView.addSubview(progressViewOne!)
         self.rightStoryAnimatedView.addSubview(progressViewTwo!)
     }
-    
-    private func mockSteps() -> [TimeLineStep] {
-        
-        var stepsArray: [TimeLineStep] = []
-        
-        let stepsArrayDic: [Dictionary<String, Any>] = [["completed":true, "completedPercentage":100.0, "stepTitle":"Consegna kit", "stepDescription":"La consegna del kit aziendale è il primo passaggio fondamentale per cominciare a lavorare.", "color":UIColor(hexString: "FFAA2A", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Corsi di sicurezzza", "stepDescription":"La salute prima di tutto. Completa tutti i corsi di sicurezza sul lavoro", "color":UIColor(hexString: "FF7556", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Conoscenze", "stepDescription":"Il rapporto con i colleghi è fondamnetale per godere della vita aziendale", "color":UIColor(hexString: "C77878", alpha: 1.0), "isStepActive": false],["completed":true, "completedPercentage":100.0, "stepTitle":"Competeze ", "stepDescription":"Approfondisci delle competenze già acquisite. Discutine con il tuo responsabile.", "color":UIColor(hexString: "00A8DE", alpha: 1.0),"isStepActive": false]]
-        
-        stepsArrayDic.forEach { (stepDic) in
-            
-            if let completed = stepDic["completed"] as? Bool,
-               let completedPercentage = stepDic["completedPercentage"] as? Double,
-               let stepTitle = stepDic["stepTitle"] as? String,
-               let stepDescription = stepDic["stepDescription"] as? String,
-               let isStepActive = stepDic["isStepActive"] as? Bool,
-               let color = stepDic["color"] as? UIColor {
-                let step = TimeLineStep(completed: completed, completedPercentage: completedPercentage, stepTitle: stepTitle, stepDescription: stepDescription, color: color, isStepActive: isStepActive)
-                stepsArray.append(step)
-            }
-        }
-        return stepsArray
-    }
+
 }
 
 extension RoadMap: TimeLineDelegate {
     func presentCompletedScreen() {
-        if(self.didShowSuccessTutorial == false && self.isViewLoaded && (self.view.window != nil)) {
+        var count = 0
+        self.stepArray.forEach { (step) in
+            if step.completed == true {
+                count += 1
+            }
+        }
+        
+        if( count == stepArray.count && self.didShowSuccessTutorial == false && self.isViewLoaded && (self.view.window != nil)) {
             let completedVC = CompletedStepsModalVC(nibName: "CompletedStepsModalVC", bundle: nil)
             completedVC.modalPresentationStyle = .overFullScreen
             self.present(completedVC, animated: true, completion: nil)
@@ -107,8 +100,9 @@ extension RoadMap: TimeLineDelegate {
 
     }
     
-    func listOfSteps() -> [TimeLineStep] {
-        return self.mockSteps()
+    func listOfSteps() -> [Step] {
+        return self.stepArray
+        
     }
     
     

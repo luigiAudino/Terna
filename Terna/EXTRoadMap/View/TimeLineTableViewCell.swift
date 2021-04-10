@@ -26,10 +26,10 @@ class TimeLineTableViewCell: UITableViewCell {
     @IBOutlet weak var dotTopSpace: NSLayoutConstraint!
     @IBOutlet weak var dotWidthSpace: NSLayoutConstraint!
     
-    public func setup(delegate: TimeLineCellDelegate, model: TimeLineCellModel, step: TimeLineStep) {
+    public func setup(delegate: TimeLineCellDelegate, model: TimeLineCellModel, step: Step) {
         self.setupTextForPosition(model: model, step: step)
 
-        self.stepView?.setup(color: step.color, percentage: step.completedPercentage)
+        self.stepView?.setup(color: UIColor(hexString: step.color), percentage: Double(step.completedPercentage))
         if(model.shouldLoad) {
             self.animate(step: step)
             
@@ -38,27 +38,27 @@ class TimeLineTableViewCell: UITableViewCell {
     }
 
     
-    private func setupTextForPosition(model: TimeLineCellModel, step: TimeLineStep)
+    private func setupTextForPosition(model: TimeLineCellModel, step: Step)
     {
         if model.textPosition == .right {
             self.rightStackView.isHidden = false
             self.leftStackView.isHidden = true
             self.rightTitleLabel.text = step.stepTitle
             self.rightDescriptionLabel.text = step.stepDescription
-            self.rightTitleLabel.textColor = step.color
+            self.rightTitleLabel.textColor = UIColor(hexString: step.color)
         } else {
             self.leftStackView.isHidden = false
             self.rightStackView.isHidden = true
             self.leftTitleLabel.text = step.stepTitle
             self.leftDescriptionLabel.text = step.stepDescription
-            self.leftTitleLabel.textColor = step.color
+            self.leftTitleLabel.textColor = UIColor(hexString: step.color)
         }
         self.stepView?.layer.cornerRadius = 20
 
 
     }
     
-    func animate(step: TimeLineStep) {
+    func animate(step: Step) {
         self.layoutIfNeeded()
         let _ = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { timer in
             if step.isStepActive {

@@ -27,6 +27,9 @@
 		626418AB2620B82A00D337C6 /* StoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626418A92620B82A00D337C6 /* StoriesViewController.xib */; };
 		626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */; };
 		626418B32620BC1900D337C6 /* StoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */; };
+		62B81B2726225A6000334628 /* Roadmap-Luigi.json in Resources */ = {isa = PBXBuildFile; fileRef = 62B81B2626225A6000334628 /* Roadmap-Luigi.json */; };
+		62B81B2A26225A7400334628 /* Roadmap-Piero.json in Resources */ = {isa = PBXBuildFile; fileRef = 62B81B2926225A7400334628 /* Roadmap-Piero.json */; };
+		62B81B2D26225C1500334628 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B81B2C26225C1500334628 /* Steps.swift */; };
 		62F8D25A26211CD300793FF3 /* AnimatedRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D25926211CD300793FF3 /* AnimatedRoundedView.swift */; };
 		62F8D25F2621B0C500793FF3 /* TimeLineLastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D25E2621B0C500793FF3 /* TimeLineLastCell.swift */; };
 		62F8D26A2621BFCF00793FF3 /* CompletedStepsModalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D2682621BFCF00793FF3 /* CompletedStepsModalVC.swift */; };
@@ -108,6 +111,9 @@
 		626418A92620B82A00D337C6 /* StoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesViewController.xib; sourceTree = "<group>"; };
 		626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		62B81B2626225A6000334628 /* Roadmap-Luigi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Roadmap-Luigi.json"; sourceTree = "<group>"; };
+		62B81B2926225A7400334628 /* Roadmap-Piero.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Roadmap-Piero.json"; sourceTree = "<group>"; };
+		62B81B2C26225C1500334628 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
 		62F8D25926211CD300793FF3 /* AnimatedRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedRoundedView.swift; sourceTree = "<group>"; };
 		62F8D25E2621B0C500793FF3 /* TimeLineLastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineLastCell.swift; sourceTree = "<group>"; };
 		62F8D2682621BFCF00793FF3 /* CompletedStepsModalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedStepsModalVC.swift; sourceTree = "<group>"; };
@@ -444,6 +450,7 @@
 				62F8D27E2621F9C700793FF3 /* Notification.swift */,
 				A6D3E57026220E7100618710 /* User.swift */,
 				A6D3E577262210FB00618710 /* UserResult.swift */,
+				62B81B2C26225C1500334628 /* Steps.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -455,6 +462,8 @@
 				A6D3E5422620D30600618710 /* story.json */,
 				A68BA17A261A971D00ACC4C7 /* job.json */,
 				62F8D2812621FE1900793FF3 /* notifiche.json */,
+				62B81B2626225A6000334628 /* Roadmap-Luigi.json */,
+				62B81B2926225A7400334628 /* Roadmap-Piero.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -554,10 +563,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B0E822261B6C0C000C5767 /* Lato-BlackItalic.ttf in Resources */,
+				62B81B2A26225A7400334628 /* Roadmap-Piero.json in Resources */,
 				A6B0E819261B6C0C000C5767 /* Lato-Italic.ttf in Resources */,
 				A6B0E827261B6C0C000C5767 /* Lato-HairlineItalic.ttf in Resources */,
 				A6705B44261A8AC000DFE6DC /* JobTableViewCell.xib in Resources */,
 				A607D8A7261A631E00FCFE50 /* LaunchScreen.storyboard in Resources */,
+				62B81B2726225A6000334628 /* Roadmap-Luigi.json in Resources */,
 				A6B0E81A261B6C0C000C5767 /* Lato-SemiboldItalic.ttf in Resources */,
 				A6B0E81B261B6C0C000C5767 /* Lato-Black.ttf in Resources */,
 				A6D3E5432620D30600618710 /* story.json in Resources */,
@@ -653,6 +664,7 @@
 				A6D3E5512620ED7200618710 /* StoryDetailCollectionViewCell.swift in Sources */,
 				4716FCFA262242DD0080EBCC /* Chat.swift in Sources */,
 				4716FCEF262241DF0080EBCC /* Video.swift in Sources */,
+				62B81B2D26225C1500334628 /* Steps.swift in Sources */,
 				620906022620D9E20002A549 /* BusinessManager.swift in Sources */,
 				62F8D27F2621F9C700793FF3 /* Notification.swift in Sources */,
 				4716FCF0262241DF0080EBCC /* VideoListScreen.swift in Sources */,
