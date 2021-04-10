@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompletedStepsModalVC" customModule="Terna" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evA-Uz-cyU">
+                    <rect key="frame" x="15" y="59" width="384" height="788"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Win1x" translatesAutoresizingMaskIntoConstraints="NO" id="Pet-LJ-ovF">
+                            <rect key="frame" x="92" y="30" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="9cu-r2-MBN"/>
+                                <constraint firstAttribute="height" constant="200" id="Kcf-a8-SDo"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulazioni per il tuo Onboarding!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUJ-cc-Yob">
+                            <rect key="frame" x="20" y="260" width="344" height="24"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u24-HP-tgC">
+                            <rect key="frame" x="30" y="314" width="324" height="139"/>
+                            <string key="text">Complimenti! Hai finalmente terminato la tua fse di onboarding e nuove sfide ogni giorno arriveranno per farti migliorare, ma sempre step by step. Siamo lieti ed orgogliosi del supermaneto delle varie fasi con successo. Una brillante carriera è alle porte, in bocca al lupo!</string>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJY-Lh-liJ">
+                            <rect key="frame" x="45" y="693" width="294" height="55"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="9AU-nT-sGl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                            <state key="normal" title="Grazie Mille!">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="yJY-Lh-liJ" firstAttribute="leading" secondItem="evA-Uz-cyU" secondAttribute="leading" constant="45" id="0U5-q8-d6c"/>
+                        <constraint firstItem="u24-HP-tgC" firstAttribute="leading" secondItem="evA-Uz-cyU" secondAttribute="leading" constant="30" id="Bfi-Et-Yzm"/>
+                        <constraint firstItem="dUJ-cc-Yob" firstAttribute="top" secondItem="Pet-LJ-ovF" secondAttribute="bottom" constant="30" id="Bod-uC-Lp9"/>
+                        <constraint firstItem="Pet-LJ-ovF" firstAttribute="centerX" secondItem="evA-Uz-cyU" secondAttribute="centerX" id="GCH-aB-159"/>
+                        <constraint firstItem="dUJ-cc-Yob" firstAttribute="leading" secondItem="evA-Uz-cyU" secondAttribute="leading" constant="20" id="HDv-pp-0c1"/>
+                        <constraint firstAttribute="trailing" secondItem="u24-HP-tgC" secondAttribute="trailing" constant="30" id="Nrq-nc-mvW"/>
+                        <constraint firstAttribute="bottom" secondItem="yJY-Lh-liJ" secondAttribute="bottom" constant="40" id="QQi-eH-4GH"/>
+                        <constraint firstAttribute="trailing" secondItem="yJY-Lh-liJ" secondAttribute="trailing" constant="45" id="SPI-GW-bYt"/>
+                        <constraint firstItem="Pet-LJ-ovF" firstAttribute="top" secondItem="evA-Uz-cyU" secondAttribute="top" constant="30" id="U3T-PP-Xkn"/>
+                        <constraint firstItem="u24-HP-tgC" firstAttribute="top" secondItem="dUJ-cc-Yob" secondAttribute="bottom" constant="30" id="W52-pZ-H1i"/>
+                        <constraint firstAttribute="trailing" secondItem="dUJ-cc-Yob" secondAttribute="trailing" constant="20" id="ztM-tX-0k7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.1333333333" green="0.14117647059999999" blue="0.1529411765" alpha="0.21970324569873595" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="evA-Uz-cyU" secondAttribute="trailing" constant="15" id="1jh-hq-iMg"/>
+                <constraint firstItem="evA-Uz-cyU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="6vI-C1-A5j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="evA-Uz-cyU" secondAttribute="bottom" constant="15" id="N1C-LG-a9o"/>
+                <constraint firstItem="evA-Uz-cyU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="c0a-Uz-jUo"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="106"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Win1x" width="376" height="376"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

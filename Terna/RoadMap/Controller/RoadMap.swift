@@ -97,6 +97,12 @@ class RoadMap: UIViewController
 }
 
 extension RoadMap: TimeLineDelegate {
+    func presentCompletedScreen() {
+        let completedVC = CompletedStepsModalVC(nibName: "CompletedStepsModalVC", bundle: nil)
+        completedVC.modalPresentationStyle = .overFullScreen
+        self.present(completedVC, animated: true, completion: nil)
+    }
+    
     func listOfSteps() -> [TimeLineStep] {
         return self.mockSteps()
     }

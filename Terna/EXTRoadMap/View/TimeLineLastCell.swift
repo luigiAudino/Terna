@@ -8,10 +8,17 @@
 import Foundation
 import UIKit
 
+protocol TimeLineLastCellDelegate {
+    func lastCellAnimationDidFinish()
+}
+
 class TimeLineLastCell: UITableViewCell
 {
     
-    public func setup(model: TimeLineCellModel) {
+    private var delegate: TimeLineLastCellDelegate?
+    
+    public func setup(model: TimeLineCellModel, delegate: TimeLineLastCellDelegate) {
+        self.delegate = delegate
         if(model.shouldLoad) {
             self.animateConverView()
         }
@@ -19,6 +26,6 @@ class TimeLineLastCell: UITableViewCell
 
     
     private func animateConverView() {
-
+        delegate?.lastCellAnimationDidFinish()
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 
 protocol TimeLineDelegate: UITableViewDelegate {
     func listOfSteps() -> [TimeLineStep]
+    func presentCompletedScreen()
 }
 
 
@@ -97,7 +98,7 @@ extension TimeLineView: UITableViewDelegate, UITableViewDataSource, TimeLineCell
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "completedCell") as? TimeLineLastCell else {
                 return UITableViewCell()
             }
-            cell.setup(model: models[indexPath.row])
+            cell.setup(model: models[indexPath.row], delegate: self)
             return cell
             
         }
@@ -121,4 +122,11 @@ extension TimeLineView: UITableViewDelegate, UITableViewDataSource, TimeLineCell
     }
     
 
+}
+
+
+extension TimeLineView: TimeLineLastCellDelegate {
+    func lastCellAnimationDidFinish() {
+        self.delegate?.presentCompletedScreen()
+    }
 }
