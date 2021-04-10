@@ -13,6 +13,7 @@ protocol StoryDetailProtocol {
 }
 
 class StoryDetailCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var progressView: UIView!
     @IBOutlet weak var progressBarWidth: NSLayoutConstraint!
     
@@ -20,7 +21,7 @@ class StoryDetailCollectionViewCell: UICollectionViewCell {
     private var delegate: StoryDetailProtocol?
     private var nextIndex: Int?
     
-    @IBOutlet weak var lbl: UILabel!
+
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var closeBtn: UIButton!
     
@@ -35,7 +36,7 @@ class StoryDetailCollectionViewCell: UICollectionViewCell {
     func setup(delegate: StoryDetailProtocol, story: Story, nextIndex: Int) {
         self.nextIndex = nextIndex
         self.delegate = delegate
-        self.lbl.text = story.description
+        self.imageView.image = UIImage(named: story.image)
         if(story.shouldLoad) {
             startProgressStory()
         }

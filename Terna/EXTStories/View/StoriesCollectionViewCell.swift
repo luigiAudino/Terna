@@ -55,7 +55,7 @@ class StoriesCollectionViewCell: UICollectionViewCell {
     
     
     public func setup(story: Story) {
-        self.imageView?.image = UIImage(named:story.image)
+        self.imageView?.image = UIImage(named:story.icon)
         self.imageView?.backgroundColor =  UIColor(hexString: story.colorHex, alpha: 1.0)
     }
 }
