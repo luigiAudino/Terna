@@ -26,7 +26,15 @@ class BusinessManager {
     
     
     static func readStepMock(completion: ([Step]) -> ()) {
-        if let path = Bundle.main.path(forResource: "Roadmap-Luigi", ofType: "json") {
+        
+        
+        var name = "Luigi"
+        
+        if Singleton.shared.getUser()?.email == "pierojunior.gaetani@gmail.com" {
+            name = "Piero"
+        }
+        
+        if let path = Bundle.main.path(forResource: "Roadmap-\(name)", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 
