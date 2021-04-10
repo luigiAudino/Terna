@@ -17,11 +17,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-3P-eJ1">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-3P-eJ1" customClass="AnimatedRoundedView" customModule="Terna" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rom-ID-gUj">
-                                <rect key="frame" x="5" y="5" width="60" height="60"/>
+                                <rect key="frame" x="10" y="10" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rom-ID-gUj" secondAttribute="height" multiplier="1:1" id="VM0-fg-4Zb"/>
                                 </constraints>
@@ -29,11 +29,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="rom-ID-gUj" secondAttribute="bottom" constant="5" id="JJc-NH-wOg"/>
+                            <constraint firstAttribute="bottom" secondItem="rom-ID-gUj" secondAttribute="bottom" constant="10" id="JJc-NH-wOg"/>
                             <constraint firstAttribute="width" secondItem="sL8-3P-eJ1" secondAttribute="height" multiplier="1:1" id="bU4-9E-Xby"/>
-                            <constraint firstItem="rom-ID-gUj" firstAttribute="top" secondItem="sL8-3P-eJ1" secondAttribute="top" constant="5" id="g0c-Sd-hMe"/>
-                            <constraint firstItem="rom-ID-gUj" firstAttribute="leading" secondItem="sL8-3P-eJ1" secondAttribute="leading" constant="5" id="vdh-Ae-LES"/>
-                            <constraint firstAttribute="trailing" secondItem="rom-ID-gUj" secondAttribute="trailing" constant="5" id="zip-wa-CV2"/>
+                            <constraint firstItem="rom-ID-gUj" firstAttribute="top" secondItem="sL8-3P-eJ1" secondAttribute="top" constant="10" id="g0c-Sd-hMe"/>
+                            <constraint firstItem="rom-ID-gUj" firstAttribute="leading" secondItem="sL8-3P-eJ1" secondAttribute="leading" constant="10" id="vdh-Ae-LES"/>
+                            <constraint firstAttribute="trailing" secondItem="rom-ID-gUj" secondAttribute="trailing" constant="10" id="zip-wa-CV2"/>
                         </constraints>
                     </view>
                 </subviews>
