@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -21,13 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="367" height="201"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-tV-PbP">
-                                <rect key="frame" x="162.5" y="90" width="42" height="21"/>
+                                <rect key="frame" x="162.66666666666666" y="90" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Yw-rM5">
-                                <rect key="frame" x="323" y="0.0" width="44" height="44"/>
+                                <rect key="frame" x="313" y="50" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="21B-Yw-rM5" secondAttribute="height" multiplier="1:1" id="K0c-do-dKq"/>
                                     <constraint firstAttribute="height" constant="44" id="jBL-4P-EFr"/>
@@ -40,8 +40,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="21B-Yw-rM5" secondAttribute="trailing" id="HHZ-Ir-lqS"/>
-                            <constraint firstItem="21B-Yw-rM5" firstAttribute="top" secondItem="DgH-QS-sQX" secondAttribute="top" id="JuR-Rw-XX6"/>
+                            <constraint firstAttribute="trailing" secondItem="21B-Yw-rM5" secondAttribute="trailing" constant="10" id="HHZ-Ir-lqS"/>
+                            <constraint firstItem="21B-Yw-rM5" firstAttribute="top" secondItem="DgH-QS-sQX" secondAttribute="top" constant="50" id="JuR-Rw-XX6"/>
                             <constraint firstItem="dqf-tV-PbP" firstAttribute="centerX" secondItem="DgH-QS-sQX" secondAttribute="centerX" id="OBT-LG-Gij"/>
                             <constraint firstItem="dqf-tV-PbP" firstAttribute="centerY" secondItem="DgH-QS-sQX" secondAttribute="centerY" id="tb7-jH-d9g"/>
                         </constraints>
