@@ -1,0 +1,58 @@
+{
+  "result":{
+     "code":0,
+     "description":"OK",
+     "success":true
+  },
+  "stories":[
+      {
+          "id" : 0,
+          "icon" : "peopleStoryIcon",
+          "colorHex" : "#2D5FB8",
+          "image" : "assa",
+          "description" : "description0",
+          "readed" : true
+      },
+      {
+      "id" : 1,
+      "icon" : "peopleStoryIcon",
+      "colorHex" : "#2D5FB8",
+<<<<<<< HEAD
+      "image" : "assa",
+      "description" : "description1",
+=======
+      "image" : "peopleStoryIcon",
+      "description" : "asaa",
+>>>>>>> 41d916582d14acb0fe0e9606546357c6eaef1a01
+      "readed" : true
+  },{
+      "id" : 2,
+      "icon" : "newsStoryIcon",
+      "colorHex" : "#FF7556",
+      "image" : "newsStoryIcon",
+      "description" : "description2",
+      "readed" : true
+  },{
+      "id" : 3,
+      "icon" : "maniIcon",
+      "colorHex" : "#FFE152",
+      "image" : "maniIcon",
+      "description" : "description3",
+      "readed" : true
+  },{
+      "id" : 4,
+      "icon" : "trophyIcon",
+      "colorHex" : "#97C239",
+      "image" : "trophyIcon",
+      "description" : "description4",
+      "readed" : false
+  },{
+      "id" : 4,
+      "icon" : "maniIcon",
+      "colorHex" : "#97C239",
+      "image" : "maniIcon",
+      "description" : "description5",
+      "readed" : false
+  }]
+  
+}
