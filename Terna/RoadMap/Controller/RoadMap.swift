@@ -19,7 +19,7 @@ class RoadMap: UIViewController
     @IBOutlet weak var leftStoryAnimatedViewWidth: NSLayoutConstraint!
     private var progressViewOne: UIView?
     private var progressViewTwo: UIView?
-
+    private var didShowSuccessTutorial = false
     override func viewDidLoad() {
         super.viewDidLoad()
         let logo = UIImage(named: "Logo_Terna_clear")
@@ -98,9 +98,13 @@ class RoadMap: UIViewController
 
 extension RoadMap: TimeLineDelegate {
     func presentCompletedScreen() {
-        let completedVC = CompletedStepsModalVC(nibName: "CompletedStepsModalVC", bundle: nil)
-        completedVC.modalPresentationStyle = .overFullScreen
-        self.present(completedVC, animated: true, completion: nil)
+        if(self.didShowSuccessTutorial == false && self.isViewLoaded && (self.view.window != nil)) {
+            let completedVC = CompletedStepsModalVC(nibName: "CompletedStepsModalVC", bundle: nil)
+            completedVC.modalPresentationStyle = .overFullScreen
+            self.present(completedVC, animated: true, completion: nil)
+            self.didShowSuccessTutorial = true
+        }
+
     }
     
     func listOfSteps() -> [TimeLineStep] {

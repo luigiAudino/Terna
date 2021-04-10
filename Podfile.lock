@@ -49,7 +49,7 @@ DEPENDENCIES:
   - "MaterialComponents/TextControls+FilledTextFields"
 
 SPEC REPOS:
-  trunk:
+  https://cdn.cocoapods.org/:
     - MaterialComponents
     - MDFInternationalization
 
@@ -59,4 +59,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: eddb5a2b461d4fffdb0b020b859db1f153cf5b46
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.3
