@@ -34,7 +34,12 @@ class TimeLineTableViewCell: UITableViewCell {
             self.animate(step: step)
             
             self.delegate = delegate
+        } else {
+            
         }
+        
+        
+        
     }
 
     

@@ -9,15 +9,15 @@
        "completed":true,
        "completedPercentage":100.0,
        "stepTitle":"Consegna kit",
-       "stepDescription":"La consegna del kit aziendale è il primo passaggio fondamentale per cominciare a lavorare.",
+       "stepDescription":"La consegna del kit aziendale è il primo passaggio fondamentale per cominciare.",
        "color":"FFAA2A",
        "isStepActive": false
    },
    {
        "completed":false,
        "completedPercentage":30.0,
-       "stepTitle":"Corsi di sicurezzza",
-       "stepDescription":"La salute prima di tutto. Completa tutti i corsi di sicurezza sul lavoro",
+       "stepTitle":"Sicurezzza",
+       "stepDescription":"Completa tutti i corsi di sicurezza sul lavoro",
        "color":"FF7556",
        "isStepActive": true
    },
@@ -32,8 +32,8 @@
    {
        "completed":false,
        "completedPercentage":0,
-       "stepTitle":"Corsi di sicurezzza",
-       "stepDescription":"La salute prima di tutto. Completa tutti i corsi di sicurezza sul lavoro",
+       "stepTitle":"Competeze",
+       "stepDescription":"Approfondisci delle competenze già acquisite. Discutine con il tuo responsabile.",
        "color":"FF7556",
        "isStepActive": false
    },
