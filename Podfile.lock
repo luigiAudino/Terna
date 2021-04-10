@@ -91,7 +91,7 @@ DEPENDENCIES:
   - "MaterialComponents/TextControls+FilledTextFieldsTheming"
 
 SPEC REPOS:
-  trunk:
+  https://cdn.cocoapods.org/:
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
@@ -103,4 +103,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: c79518bbbac44632b869af5e55822740c4a16d3b
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.3

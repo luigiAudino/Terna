@@ -21,15 +21,7 @@ class ChatListScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         conversazioni = createArray()
-        
-        
     }
-    
-    
-        
-       
-   
-    
     
     func createArray() -> [Chat] {
         
@@ -38,8 +30,6 @@ class ChatListScreen: UIViewController {
         let chat3 = Chat(image: #imageLiteral(resourceName: "Luigi"), title: "Luigi Audino", ultimoMessaggioLabel: "Lunedì si lavora dalle 10.00", dataLabel: "06/04",chatAnimation: false)
         let chat4 = Chat(image: #imageLiteral(resourceName: "LuigiS"), title: "Luigi Scherillo", ultimoMessaggioLabel: "non ti dimenticare la email!😘", dataLabel: "05/04",chatAnimation: false)
         let chat5 = Chat(image: #imageLiteral(resourceName: "Piero"), title: "Piero J. Gaetani", ultimoMessaggioLabel: "Domani  Pizza🍕", dataLabel: "03/04",chatAnimation: false)
-      
-    
         return [chat1, chat2, chat3, chat4, chat5]
     }
 
