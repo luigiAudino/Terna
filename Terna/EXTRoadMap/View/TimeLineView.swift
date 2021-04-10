@@ -47,6 +47,10 @@ class TimeLineView: UIView
                         self.models.append(model)
                     }
         }
+        
+        let model = TimeLineCellModel(shouldLoad: false)
+        self.models.append(model)
+        
         self.tableView?.reloadData()
     }
 }
@@ -66,10 +70,21 @@ extension TimeLineView: UITableViewDelegate, UITableViewDataSource, TimeLineCell
             tableView?.endUpdates()
             
         }
-        if models[cellToLoad].shouldLoad == true && steps[cellToLoad].isStepActive == true || steps[cellToLoad].completed == true {
-            let indexPath = IndexPath(row: cellToLoad, section: 0)
-            tableView?.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.middle, animated: true)
+        
+        if cellToLoad < steps.count {
+            if models[cellToLoad].shouldLoad == true && steps[cellToLoad].isStepActive == true || steps[cellToLoad].completed == true {
+                let indexPath = IndexPath(row: cellToLoad, section: 0)
+                tableView?.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.middle, animated: true)
+            }
+        } else {
+            if models[cellToLoad].shouldLoad{
+                let indexPath = IndexPath(row: cellToLoad, section: 0)
+                tableView?.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.middle, animated: true)
+            }
         }
+        
+        
+   
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -77,6 +92,16 @@ extension TimeLineView: UITableViewDelegate, UITableViewDataSource, TimeLineCell
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if(indexPath.row == models.count - 1) {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "completedCell") as? TimeLineLastCell else {
+                return UITableViewCell()
+            }
+            cell.setup(model: models[indexPath.row])
+            return cell
+            
+        }
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "timeLineCell") as? TimeLineTableViewCell else {
             return UITableViewCell()
         }

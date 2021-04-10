@@ -22,6 +22,7 @@
 		626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */; };
 		626418B32620BC1900D337C6 /* StoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */; };
 		62F8D25A26211CD300793FF3 /* AnimatedRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D25926211CD300793FF3 /* AnimatedRoundedView.swift */; };
+		62F8D25F2621B0C500793FF3 /* TimeLineLastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D25E2621B0C500793FF3 /* TimeLineLastCell.swift */; };
 		A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89A261A631D00FCFE50 /* AppDelegate.swift */; };
 		A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89C261A631D00FCFE50 /* SceneDelegate.swift */; };
 		A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89E261A631D00FCFE50 /* ViewController.swift */; };
@@ -84,6 +85,7 @@
 		626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		62F8D25926211CD300793FF3 /* AnimatedRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedRoundedView.swift; sourceTree = "<group>"; };
+		62F8D25E2621B0C500793FF3 /* TimeLineLastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineLastCell.swift; sourceTree = "<group>"; };
 		9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Terna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D897261A631D00FCFE50 /* Terna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D89A261A631D00FCFE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				6264187A26205C3D00D337C6 /* TimeLineView.swift */,
 				6264188526205DBA00D337C6 /* TimeLineInnerView.swift */,
 				6264188826205E6B00D337C6 /* TimeLineTableViewCell.swift */,
+				62F8D25E2621B0C500793FF3 /* TimeLineLastCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				626418A82620B82A00D337C6 /* StoriesViewController.swift */,
-				626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */,
 				A6D3E5462620E9A200618710 /* StoryDetailViewController.swift */,
 				A6D3E54F2620ED7200618710 /* StoryDetailCollectionViewCell.swift */,
 				A6D3E5502620ED7200618710 /* StoryDetailCollectionViewCell.xib */,
@@ -545,6 +547,7 @@
 				A6BF1262261A9C49006F0AB3 /* Result.swift in Sources */,
 				A68BA16F261A93EE00ACC4C7 /* Job.swift in Sources */,
 				A6B0E802261B68F7000C5767 /* Color.swift in Sources */,
+				62F8D25F2621B0C500793FF3 /* TimeLineLastCell.swift in Sources */,
 				6264189D262067BF00D337C6 /* RoadMap.swift in Sources */,
 				A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */,
 				A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */,
