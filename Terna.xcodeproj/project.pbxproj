@@ -23,6 +23,9 @@
 		626418B32620BC1900D337C6 /* StoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */; };
 		62F8D25A26211CD300793FF3 /* AnimatedRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D25926211CD300793FF3 /* AnimatedRoundedView.swift */; };
 		62F8D25F2621B0C500793FF3 /* TimeLineLastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D25E2621B0C500793FF3 /* TimeLineLastCell.swift */; };
+		62F8D26A2621BFCF00793FF3 /* CompletedStepsModalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D2682621BFCF00793FF3 /* CompletedStepsModalVC.swift */; };
+		62F8D26B2621BFCF00793FF3 /* CompletedStepsModalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F8D2692621BFCF00793FF3 /* CompletedStepsModalVC.xib */; };
+		62F8D26F2621C76C00793FF3 /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D26E2621C76C00793FF3 /* ChatbotViewController.swift */; };
 		A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89A261A631D00FCFE50 /* AppDelegate.swift */; };
 		A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89C261A631D00FCFE50 /* SceneDelegate.swift */; };
 		A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89E261A631D00FCFE50 /* ViewController.swift */; };
@@ -86,6 +89,9 @@
 		626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		62F8D25926211CD300793FF3 /* AnimatedRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedRoundedView.swift; sourceTree = "<group>"; };
 		62F8D25E2621B0C500793FF3 /* TimeLineLastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineLastCell.swift; sourceTree = "<group>"; };
+		62F8D2682621BFCF00793FF3 /* CompletedStepsModalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedStepsModalVC.swift; sourceTree = "<group>"; };
+		62F8D2692621BFCF00793FF3 /* CompletedStepsModalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedStepsModalVC.xib; sourceTree = "<group>"; };
+		62F8D26E2621C76C00793FF3 /* ChatbotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
 		9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Terna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D897261A631D00FCFE50 /* Terna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D89A261A631D00FCFE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 		6264188D2620605300D337C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				62F8D2692621BFCF00793FF3 /* CompletedStepsModalVC.xib */,
 				626418A02620689000D337C6 /* RoadMap.storyboard */,
 			);
 			path = Resources;
@@ -211,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				6264189C262067BF00D337C6 /* RoadMap.swift */,
+				62F8D2682621BFCF00793FF3 /* CompletedStepsModalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +303,7 @@
 		A607D899261A631D00FCFE50 /* Terna */ = {
 			isa = PBXGroup;
 			children = (
+				62F8D26E2621C76C00793FF3 /* ChatbotViewController.swift */,
 				620906002620D9D50002A549 /* Business */,
 				626418A42620B7EA00D337C6 /* EXTStories */,
 				6264188C2620604200D337C6 /* RoadMap */,
@@ -483,6 +492,7 @@
 				A6B0E820261B6C0C000C5767 /* Lato-Thin.ttf in Resources */,
 				A6B0E826261B6C0C000C5767 /* Lato-BoldItalic.ttf in Resources */,
 				A6D3E5522620ED7200618710 /* StoryDetailCollectionViewCell.xib in Resources */,
+				62F8D26B2621BFCF00793FF3 /* CompletedStepsModalVC.xib in Resources */,
 				A6705B2C261A864D00DFE6DC /* GuestStoryboard.storyboard in Resources */,
 				A6705B33261A86F000DFE6DC /* UserStoryboard.storyboard in Resources */,
 				A6B0E81C261B6C0C000C5767 /* Lato-Regular.ttf in Resources */,
@@ -547,9 +557,11 @@
 				A6BF1262261A9C49006F0AB3 /* Result.swift in Sources */,
 				A68BA16F261A93EE00ACC4C7 /* Job.swift in Sources */,
 				A6B0E802261B68F7000C5767 /* Color.swift in Sources */,
+				62F8D26A2621BFCF00793FF3 /* CompletedStepsModalVC.swift in Sources */,
 				62F8D25F2621B0C500793FF3 /* TimeLineLastCell.swift in Sources */,
 				6264189D262067BF00D337C6 /* RoadMap.swift in Sources */,
 				A6705B2F261A86A100DFE6DC /* AboutUsViewController.swift in Sources */,
+				62F8D26F2621C76C00793FF3 /* ChatbotViewController.swift in Sources */,
 				A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */,
 				A6D3E5512620ED7200618710 /* StoryDetailCollectionViewCell.swift in Sources */,
 				620906022620D9E20002A549 /* BusinessManager.swift in Sources */,
