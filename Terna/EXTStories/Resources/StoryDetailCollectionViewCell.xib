@@ -25,7 +25,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teb-mc-0Pv">
                                 <rect key="frame" x="0.0" y="50" width="0.0" height="5"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="backgroundColor" red="0.1764705882352941" green="0.37254901960784315" blue="0.72156862745098038" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="bop-J9-JFB"/>
                                     <constraint firstAttribute="height" constant="5" id="ywK-mX-Flb"/>
@@ -79,9 +79,6 @@
         <image name="close" width="24" height="24.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
