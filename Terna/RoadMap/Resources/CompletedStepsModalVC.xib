@@ -19,6 +19,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompletedStepsModalVC" customModule="Terna" customModuleProvider="target">
             <connections>
+                <outlet property="sheetView" destination="evA-Uz-cyU" id="Nhh-CV-zC4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -37,14 +38,14 @@
                                 <constraint firstAttribute="height" constant="200" id="Kcf-a8-SDo"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulazioni per il tuo Onboarding!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUJ-cc-Yob">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulazioni per il tuo Onboarding!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dUJ-cc-Yob">
                             <rect key="frame" x="20" y="260" width="344" height="24"/>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u24-HP-tgC">
-                            <rect key="frame" x="30" y="314" width="324" height="143"/>
+                            <rect key="frame" x="30" y="314" width="324" height="139"/>
                             <string key="text">Complimenti! Hai finalmente terminato la tua fse di onboarding e nuove sfide ogni giorno arriveranno per farti migliorare, ma sempre step by step. Siamo lieti ed orgogliosi del supermaneto delle varie fasi con successo. Una brillante carriera è alle porte, in bocca al lupo!</string>
                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                             <nil key="textColor"/>

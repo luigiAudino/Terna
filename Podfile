@@ -9,4 +9,6 @@ target 'Terna' do
 
   pod 'MaterialComponents/TextControls+FilledTextAreas'
   pod 'MaterialComponents/TextControls+FilledTextFields'
+  pod 'MaterialComponents/TextControls+FilledTextAreasTheming'
+  pod 'MaterialComponents/TextControls+FilledTextFieldsTheming'
 end
