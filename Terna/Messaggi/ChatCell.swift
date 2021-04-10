@@ -39,37 +39,4 @@ class ChatCell: UITableViewCell {
         }
        
     }
-    
-    
-    
-   
-    
-}
-
-extension UIImageView{
-    
-    public func addCircularAnimation() {
-        self.layoutSubviews()
-        let shapeLayer = CAShapeLayer()
-        let circularPath = UIBezierPath(arcCenter: CGPoint(x:self.frame.midX - 8, y:self.frame.midY - 4), radius: 36, startAngle: -CGFloat.pi/2, endAngle: 2*CGFloat.pi - CGFloat.pi/2, clockwise: true)
-        
-        shapeLayer.path = circularPath.cgPath
-        
-        shapeLayer.strokeColor = UIColor.red.cgColor
-        shapeLayer.lineWidth = 5
-        shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeEnd = 0
-        shapeLayer.lineCap = CAShapeLayerLineCap.round
-
-        self.layer.addSublayer(shapeLayer)
-
-        let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        basicAnimation.toValue = 1
-        basicAnimation.duration = Double(1.5)
-        basicAnimation.fillMode = CAMediaTimingFillMode.forwards
-        basicAnimation.isRemovedOnCompletion = false
-        basicAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
-        shapeLayer.add(basicAnimation, forKey: "basicAnim")
-    }
-    
 }

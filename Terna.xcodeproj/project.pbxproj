@@ -36,6 +36,7 @@
 		62F8D27F2621F9C700793FF3 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D27E2621F9C700793FF3 /* Notification.swift */; };
 		62F8D2822621FE1900793FF3 /* notifiche.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F8D2812621FE1900793FF3 /* notifiche.json */; };
 		62F8D2862622014600793FF3 /* NotificationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D2852622014600793FF3 /* NotificationViewCell.swift */; };
+		62F8D29626224B8900793FF3 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D29526224B8900793FF3 /* UIImageView+.swift */; };
 		A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89A261A631D00FCFE50 /* AppDelegate.swift */; };
 		A607D89D261A631D00FCFE50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89C261A631D00FCFE50 /* SceneDelegate.swift */; };
 		A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607D89E261A631D00FCFE50 /* ViewController.swift */; };
@@ -116,6 +117,7 @@
 		62F8D27E2621F9C700793FF3 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		62F8D2812621FE1900793FF3 /* notifiche.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = notifiche.json; sourceTree = "<group>"; };
 		62F8D2852622014600793FF3 /* NotificationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewCell.swift; sourceTree = "<group>"; };
+		62F8D29526224B8900793FF3 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		9386ADB35B21890F5F55F1B5 /* Pods_Terna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Terna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D897261A631D00FCFE50 /* Terna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Terna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A607D89A261A631D00FCFE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,7 +194,6 @@
 		4716FCF4262242980080EBCC /* Messaggi */ = {
 			isa = PBXGroup;
 			children = (
-				4716FCF7262242DD0080EBCC /* Chat.swift */,
 				4716FCF6262242DD0080EBCC /* ChatCell.swift */,
 				4716FCF5262242DD0080EBCC /* ChatListScreen.swift */,
 			);
@@ -434,6 +435,7 @@
 		A68BA16D261A93E500ACC4C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4716FCF7262242DD0080EBCC /* Chat.swift */,
 				620905FA2620D9150002A549 /* Story.swift */,
 				A68BA16E261A93EE00ACC4C7 /* Job.swift */,
 				A6BF1261261A9C49006F0AB3 /* Result.swift */,
@@ -461,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				A6B0E801261B68F7000C5767 /* Color.swift */,
+				62F8D29526224B8900793FF3 /* UIImageView+.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				62F8D27B2621F60B00793FF3 /* NotificheViewController.swift in Sources */,
 				4716FCF9262242DD0080EBCC /* ChatCell.swift in Sources */,
 				626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */,
+				62F8D29626224B8900793FF3 /* UIImageView+.swift in Sources */,
 				6264187B26205C3D00D337C6 /* TimeLineView.swift in Sources */,
 				6209060A262114E70002A549 /* AnimatedCircledView.m in Sources */,
 				6264188026205C8700D337C6 /* TimeLineStepModel.swift in Sources */,
