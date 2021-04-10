@@ -1,0 +1,17 @@
+{
+   "result":{
+      "code":0,
+      "description":"OK",
+      "success":true
+   },
+   "users":[
+   {
+      "email":"luigi.audino@gmail.com",
+      "password":"123456"
+   },
+   {
+      "email":"pierojunior.gaetani@gmail.com",
+      "password":"qwerty"
+   }
+]
+}

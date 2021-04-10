@@ -42,7 +42,6 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="loginBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uuy-eq-mmz"/>
-                                    <segue destination="bIN-n9-btS" kind="presentation" id="nxg-5B-H8w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uC-Ul-Tzp">
@@ -81,6 +80,7 @@
                         <outlet property="loginBtn" destination="nJD-No-GfA" id="l4Y-Sl-1XF"/>
                         <outlet property="logoImg" destination="A9T-Hp-HqV" id="74j-sZ-5rc"/>
                         <outlet property="titleLbl" destination="pm9-Vp-Hps" id="zIx-3w-a0T"/>
+                        <segue destination="bIN-n9-btS" kind="showDetail" identifier="GoToHome" id="vJW-pB-4kq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
