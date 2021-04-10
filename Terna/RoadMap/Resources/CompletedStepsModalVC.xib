@@ -20,6 +20,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompletedStepsModalVC" customModule="Terna" customModuleProvider="target">
             <connections>
                 <outlet property="sheetView" destination="evA-Uz-cyU" id="Nhh-CV-zC4"/>
+                <outlet property="thankYouButton" destination="yJY-Lh-liJ" id="hVy-6c-kao"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -39,7 +39,9 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginBtnPress(_ sender: Any) {
 
-        if(!isEmptyUser()) {
+        self.performSegue(withIdentifier: "GoToHome", sender: nil)
+        
+        if(false && !isEmptyUser()) {
             if(checkUser()) {
                 print("OK")
                 setStyle(textField: emailTxtFld)

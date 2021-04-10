@@ -11,6 +11,9 @@
 		4716FCEE262241DF0080EBCC /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716FCEB262241DF0080EBCC /* VideoCell.swift */; };
 		4716FCEF262241DF0080EBCC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716FCEC262241DF0080EBCC /* Video.swift */; };
 		4716FCF0262241DF0080EBCC /* VideoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716FCED262241DF0080EBCC /* VideoListScreen.swift */; };
+		4716FCF8262242DD0080EBCC /* ChatListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716FCF5262242DD0080EBCC /* ChatListScreen.swift */; };
+		4716FCF9262242DD0080EBCC /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716FCF6262242DD0080EBCC /* ChatCell.swift */; };
+		4716FCFA262242DD0080EBCC /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716FCF7262242DD0080EBCC /* Chat.swift */; };
 		620906022620D9E20002A549 /* BusinessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620906012620D9E20002A549 /* BusinessManager.swift */; };
 		6209060A262114E70002A549 /* AnimatedCircledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62090609262114E70002A549 /* AnimatedCircledView.m */; };
 		6264187B26205C3D00D337C6 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264187A26205C3D00D337C6 /* TimeLineView.swift */; };
@@ -84,6 +87,9 @@
 		4716FCEB262241DF0080EBCC /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		4716FCEC262241DF0080EBCC /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		4716FCED262241DF0080EBCC /* VideoListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListScreen.swift; sourceTree = "<group>"; };
+		4716FCF5262242DD0080EBCC /* ChatListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListScreen.swift; sourceTree = "<group>"; };
+		4716FCF6262242DD0080EBCC /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		4716FCF7262242DD0080EBCC /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		60BEC0086387A1DE4AE74530 /* Pods-Terna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Terna.release.xcconfig"; path = "Target Support Files/Pods-Terna/Pods-Terna.release.xcconfig"; sourceTree = "<group>"; };
 		620905FA2620D9150002A549 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		620906012620D9E20002A549 /* BusinessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessManager.swift; sourceTree = "<group>"; };
@@ -181,6 +187,16 @@
 				4716FCED262241DF0080EBCC /* VideoListScreen.swift */,
 			);
 			path = VideoYoutube;
+			sourceTree = "<group>";
+		};
+		4716FCF4262242980080EBCC /* Messaggi */ = {
+			isa = PBXGroup;
+			children = (
+				4716FCF7262242DD0080EBCC /* Chat.swift */,
+				4716FCF6262242DD0080EBCC /* ChatCell.swift */,
+				4716FCF5262242DD0080EBCC /* ChatListScreen.swift */,
+			);
+			path = Messaggi;
 			sourceTree = "<group>";
 		};
 		4F828C5771C705CBE1F88B36 /* Frameworks */ = {
@@ -360,6 +376,7 @@
 		A607D899261A631D00FCFE50 /* Terna */ = {
 			isa = PBXGroup;
 			children = (
+				4716FCF4262242980080EBCC /* Messaggi */,
 				4716FCDF26222B020080EBCC /* VideoYoutube */,
 				62F8D2782621F5F100793FF3 /* Notifiche */,
 				62F8D26E2621C76C00793FF3 /* ChatbotViewController.swift */,
@@ -631,6 +648,7 @@
 				62F8D26F2621C76C00793FF3 /* ChatbotViewController.swift in Sources */,
 				A6705B43261A8AC000DFE6DC /* JobTableViewCell.swift in Sources */,
 				A6D3E5512620ED7200618710 /* StoryDetailCollectionViewCell.swift in Sources */,
+				4716FCFA262242DD0080EBCC /* Chat.swift in Sources */,
 				4716FCEF262241DF0080EBCC /* Video.swift in Sources */,
 				620906022620D9E20002A549 /* BusinessManager.swift in Sources */,
 				62F8D27F2621F9C700793FF3 /* Notification.swift in Sources */,
@@ -641,12 +659,14 @@
 				A6D3E5472620E9A200618710 /* StoryDetailViewController.swift in Sources */,
 				A6705B1F261A695A00DFE6DC /* LoginViewController.swift in Sources */,
 				62F8D27B2621F60B00793FF3 /* NotificheViewController.swift in Sources */,
+				4716FCF9262242DD0080EBCC /* ChatCell.swift in Sources */,
 				626418B22620BC1900D337C6 /* StoriesCollectionViewCell.swift in Sources */,
 				6264187B26205C3D00D337C6 /* TimeLineView.swift in Sources */,
 				6209060A262114E70002A549 /* AnimatedCircledView.m in Sources */,
 				6264188026205C8700D337C6 /* TimeLineStepModel.swift in Sources */,
 				A6D3E55A2621A18800618710 /* ChatbotViewController.swift in Sources */,
 				A607D89F261A631D00FCFE50 /* ViewController.swift in Sources */,
+				4716FCF8262242DD0080EBCC /* ChatListScreen.swift in Sources */,
 				A6705B3E261A898B00DFE6DC /* JobViewController.swift in Sources */,
 				A607D89B261A631D00FCFE50 /* AppDelegate.swift in Sources */,
 				62F8D2862622014600793FF3 /* NotificationViewCell.swift in Sources */,

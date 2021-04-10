@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "barber handshake.png",
+      "filename" : "chatbot.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "barber handshake@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "barber handshake@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
