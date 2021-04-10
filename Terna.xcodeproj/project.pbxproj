@@ -293,6 +293,7 @@
 		626418A62620B7F700D337C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6D3E54F2620ED7200618710 /* StoryDetailCollectionViewCell.swift */,
 				626418B02620BC1900D337C6 /* StoriesCollectionViewCell.swift */,
 				62090608262114E70002A549 /* AnimatedCircledView.h */,
 				62090609262114E70002A549 /* AnimatedCircledView.m */,
@@ -305,6 +306,7 @@
 		626418A72620B7FC00D337C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A6D3E5502620ED7200618710 /* StoryDetailCollectionViewCell.xib */,
 				626418B12620BC1900D337C6 /* StoriesCollectionViewCell.xib */,
 				626418A92620B82A00D337C6 /* StoriesViewController.xib */,
 			);
@@ -316,8 +318,6 @@
 			children = (
 				626418A82620B82A00D337C6 /* StoriesViewController.swift */,
 				A6D3E5462620E9A200618710 /* StoryDetailViewController.swift */,
-				A6D3E54F2620ED7200618710 /* StoryDetailCollectionViewCell.swift */,
-				A6D3E5502620ED7200618710 /* StoryDetailCollectionViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
