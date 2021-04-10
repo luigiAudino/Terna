@@ -11,7 +11,8 @@
           "colorHex" : "#2D5FB8",
           "image" : "assa",
           "description" : "description0",
-          "readed" : true
+          "readed" : true,
+          "shouldLoad" : false
       },
       {
       "id" : 1,
@@ -19,35 +20,40 @@
       "colorHex" : "#2D5FB8",
       "image" : "peopleStoryIcon",
       "description" : "description1",
-      "readed" : true
+      "readed" : true,
+      "shouldLoad" : false
   },{
       "id" : 2,
       "icon" : "newsStoryIcon",
       "colorHex" : "#FF7556",
       "image" : "newsStoryIcon",
       "description" : "description2",
-      "readed" : true
+      "readed" : true,
+      "shouldLoad" : false
   },{
       "id" : 3,
       "icon" : "maniIcon",
       "colorHex" : "#FFE152",
       "image" : "maniIcon",
       "description" : "description3",
-      "readed" : true
+      "readed" : true,
+      "shouldLoad": false
   },{
       "id" : 4,
       "icon" : "trophyIcon",
       "colorHex" : "#97C239",
       "image" : "trophyIcon",
       "description" : "description4",
-      "readed" : false
+      "readed" : false,
+      "shouldLoad" : false
   },{
       "id" : 4,
       "icon" : "maniIcon",
       "colorHex" : "#97C239",
       "image" : "maniIcon",
       "description" : "description5",
-      "readed" : false
+      "readed" : false,
+      "shouldLoad" : false
   }]
   
 }

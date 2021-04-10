@@ -55,14 +55,16 @@ class Story: Codable {
     var image: String
     var description: String
     var readed: Bool
+    var shouldLoad: Bool
     
-    init(id: Int, icon: String, colorHex: String, image: String, description: String,readed: Bool) {
+    init(id: Int, icon: String, colorHex: String, image: String, description: String,readed: Bool, shouldLoad: Bool) {
         self.id = id
         self.icon = icon
         self.colorHex = colorHex
         self.image = image
         self.description = description
         self.readed = readed
+        self.shouldLoad = shouldLoad
     }
     
     static func encode(story: Story) -> Data? {
