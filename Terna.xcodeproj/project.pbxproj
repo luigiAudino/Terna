@@ -159,6 +159,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4716FCDF26222B020080EBCC /* VideoYoutube */ = {
+			isa = PBXGroup;
+			children = (
+				47CCB8B62621C4DA00B8CA99 /* Video.swift */,
+				47CCB8B52621C4DA00B8CA99 /* VideoCell.swift */,
+				47CCB8B72621C4DA00B8CA99 /* VideoListScreen.swift */,
+			);
+			path = VideoYoutube;
+			sourceTree = "<group>";
+		};
 		4F828C5771C705CBE1F88B36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,9 +321,7 @@
 		A607D899261A631D00FCFE50 /* Terna */ = {
 			isa = PBXGroup;
 			children = (
-				47CCB8B62621C4DA00B8CA99 /* Video.swift */,
-				47CCB8B52621C4DA00B8CA99 /* VideoCell.swift */,
-				47CCB8B72621C4DA00B8CA99 /* VideoListScreen.swift */,
+				4716FCDF26222B020080EBCC /* VideoYoutube */,
 				62F8D26E2621C76C00793FF3 /* ChatbotViewController.swift */,
 				620906002620D9D50002A549 /* Business */,
 				626418A42620B7EA00D337C6 /* EXTStories */,
@@ -418,13 +426,6 @@
 				A6B0E80D261B6C0C000C5767 /* Lato-ThinItalic.ttf */,
 			);
 			path = Font;
-			sourceTree = "<group>";
-		};
-		A6D3E55C2621A2D900618710 /* YouTube */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = YouTube;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

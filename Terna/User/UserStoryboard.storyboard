@@ -313,12 +313,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JzF-Yb-T16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7844.9275362318849" y="1173.2142857142856"/>
+            <point key="canvasLocation" x="10207" y="1171"/>
         </scene>
         <!--Video-->
         <scene sceneID="SFm-ru-fB1">
             <objects>
-                <viewController id="QVo-u7-5x6" customClass="VideoListScreen" customModule="YoutubeVideoTerna" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QVo-u7-5x6" customClass="VideoListScreen" customModule="Terna" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vWj-zZ-IfC"/>
                         <viewControllerLayoutGuide type="bottom" id="DFR-Xz-gm9"/>
@@ -331,7 +331,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="108" id="z7f-8g-3OB" customClass="VideoCell" customModule="YoutubeVideoTerna" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="108" id="z7f-8g-3OB" customClass="VideoCell" customModule="Terna" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z7f-8g-3OB" id="qDp-KO-zRl">
@@ -380,13 +380,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfu-RK-WO3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8871" y="1902"/>
+            <point key="canvasLocation" x="8801" y="1859"/>
         </scene>
-        <!--Home-->
+        <!--Video-->
         <scene sceneID="NUF-EZ-Ed5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="liO-BX-ghl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="play.tv" catalog="system" id="n86-y8-IPU"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="play.tv" catalog="system" id="n86-y8-IPU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7iA-t1-slh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
