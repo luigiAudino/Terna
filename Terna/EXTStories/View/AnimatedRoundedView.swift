@@ -26,8 +26,7 @@ class AnimatedRoundedView: UIView {
 
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.toValue = 1
-//        Tempo impegato al cerchio "loading" di completarsi
-        basicAnimation.duration = Double(1.5) //RITORNA -> tot
+        basicAnimation.duration = Double(1.5)
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
         basicAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
