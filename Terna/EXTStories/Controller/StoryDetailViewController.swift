@@ -60,12 +60,10 @@ extension StoryDetailViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoryDetailCell", for: indexPath) as! StoryDetailCollectionViewCell
         let story = stories[indexPath.row]
-        cell.delegate = self
-        cell.lbl.text = story.description
+        story.shouldLoad = index == indexPath.row
         cell.containerView.backgroundColor = .green
-        
-        cell.pippo = index == indexPath.row
-        
+        cell.setup(delegate: self, story: story, nextIndex: indexPath.row)
+                
         return cell
     }
     
@@ -75,6 +73,16 @@ extension StoryDetailViewController: UICollectionViewDelegate, UICollectionViewD
 }
 
 extension StoryDetailViewController: StoryDetailProtocol {
+    func storyCompleted(index: Int) {
+        let indexPath = IndexPath(row: index + 1, section: 0)
+        self.collectionView?.isPagingEnabled = false
+        self.collectionView.scrollToItem(at: indexPath, at: .right,animated: false)
+        
+        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { timer in
+            self.collectionView?.isPagingEnabled = true
+        }
+    }
+    
     func closeAction() {
         self.dismiss(animated: true, completion: nil)
     }
