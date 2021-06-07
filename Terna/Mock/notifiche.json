@@ -1,0 +1,18 @@
+
+{
+    "result": {
+        "code":0,
+        "description":"OK",
+        "success":true
+    },
+    "notifications":[
+        {
+            "title":"Kit aziendale.",
+            "description":"Il tuo kit aziendale è pronto, passa a ritirarlo in amministrazione il prima possibile.!"
+        },
+        {
+            "title":"Benvenuto in Terna",
+            "description":"Benvenuto in Terna, riceverai una nuova notifica non appena il kit aziendale sarà pronto.Intanto sentiti libero di consultare la tua roadmap in ogni momento."
+        }
+    ]
+}

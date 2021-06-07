@@ -1,0 +1,59 @@
+{
+  "result":{
+     "code":0,
+     "description":"OK",
+     "success":true
+  },
+  "stories":[
+      {
+          "id" : 0,
+          "icon" : "TernaNews",
+          "colorHex" : "#2D5FB8",
+          "image" : "stories1",
+          "description" : "description0",
+          "readed" : true,
+          "shouldLoad" : false
+      },
+      {
+      "id" : 1,
+      "icon" : "peopleStoryIcon",
+      "colorHex" : "#2D5FB8",
+      "image" : "stories2",
+      "description" : "description1",
+      "readed" : true,
+      "shouldLoad" : false
+  },{
+      "id" : 2,
+      "icon" : "newsStoryIcon",
+      "colorHex" : "#FF7556",
+      "image" : "stories3",
+      "description" : "description2",
+      "readed" : true,
+      "shouldLoad" : false
+  },{
+      "id" : 3,
+      "icon" : "maniIcon",
+      "colorHex" : "#FFE152",
+      "image" : "stories4",
+      "description" : "description3",
+      "readed" : true,
+      "shouldLoad": false
+  },{
+      "id" : 4,
+      "icon" : "trophyIcon",
+      "colorHex" : "#97C239",
+      "image" : "stories5",
+      "description" : "description4",
+      "readed" : false,
+      "shouldLoad" : false
+  },{
+      "id" : 4,
+      "icon" : "maniIcon",
+      "colorHex" : "#97C239",
+      "image" : "stories6",
+      "description" : "description5",
+      "readed" : false,
+      "shouldLoad" : false
+  }]
+  
+}

@@ -1,0 +1,49 @@
+{
+   "result":{
+      "code":0,
+      "description":"OK",
+      "success":true
+   },
+   "steps":[
+   {
+       "completed":true,
+       "completedPercentage":100.0,
+       "stepTitle":"Consegna kit",
+       "stepDescription":"La consegna del kit aziendale è il primo passaggio fondamentale per cominciare.",
+       "color":"FFAA2A",
+       "isStepActive": false
+   },
+   {
+       "completed":true,
+       "completedPercentage":100.0,
+       "stepTitle":"Corsi di sicurezzza",
+       "stepDescription":"La salute prima di tutto. Completa tutti i corsi di sicurezza sul lavoro",
+       "color":"FF7556",
+       "isStepActive": false
+   },
+   {
+       "completed":true,
+       "completedPercentage":100.0,
+       "stepTitle":"Conoscenze",
+       "stepDescription":"Il rapporto con i colleghi è fondamnetale per godere della vita aziendale",
+       "color":"C77878",
+       "isStepActive": false
+   },
+   {
+       "completed":true,
+       "completedPercentage":100.0,
+       "stepTitle":"Competeze",
+       "stepDescription":"Approfondisci delle competenze già acquisite. Discutine con il tuo responsabile.",
+       "color":"FF7556",
+       "isStepActive": false
+   },
+   {
+       "completed":true,
+       "completedPercentage":100.0,
+       "stepTitle":"Competeze ",
+       "stepDescription":"Approfondisci delle competenze già acquisite. Discutine con il tuo responsabile.",
+       "color":"00A8DE",
+       "isStepActive": false
+   }
+]
+}
